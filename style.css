@@ -1,0 +1,45 @@
+.navbar-brand{
+    width: 250px;
+}
+
+.logo{
+    padding: 0 10px 0 10px;
+    height: auto;
+    width: 120px;
+}
+
+#text{
+    font-size: 40px;
+}
+
+.row{
+    display: inline-block;
+    flex-flow: row;
+}
+
+section#left{
+    width: 50%;
+        float: left;
+}
+
+aside#right {
+    width: 50%;
+    float: right;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container1{
+    margin-bottom: 30px;
+}
+
+.title{
+    color: chartreuse;
+    background-color: black;
+    margin-bottom: 0px;
+    padding: 5px;
+}
