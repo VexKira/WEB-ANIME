@@ -31,15 +31,35 @@ aside#right {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 655px;
+    width: auto;
 }
 
-.flex-container1{
-    margin-bottom: 30px;
+.flex-container{
+}
+
+.container{
+    margin-top: 30px;
 }
 
 .title{
     color: chartreuse;
     background-color: black;
     margin-bottom: 0px;
-    padding: 5px;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.item{
+    width: 100px;
+    height: auto;
 }
