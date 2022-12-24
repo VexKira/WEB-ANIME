@@ -1,29 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AniMend || List All Anime</title>
+    <title>AniMend | List All Anime</title>
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <div class="container-fluid">
-      <section class="">
-        <ul class="list">
-          <li class="click">
-            <a href="">1</a>
-          </li>
-          <li class="click">
-            <a href="">2</a>
-          </li>
-          <li class="click">
-            <a href="">3</a>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <div class="">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#Home.html">
+            <img class="logo" src="img/logo.png" />AniMend</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Anime.html">Anime List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Movie">Movie</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Genre
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#Action">Action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Adventure">Adventure</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Comedy">Comedy</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#Crime">Crime</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#Demons">Demons</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Detective">Detective</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#Drama">Drama</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#Fantasy">Fantasy</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#Game">Game</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#Historical">Historical</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Horror">Horror</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Isekai">Isekai</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#Magic">Magic</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#Martial">Martial Arts</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#Mecha">Mecha</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#Militiary">Military</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Psychological">Psychological</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Romance">Romance</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#School">School</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#SciFi">Sci-Fi</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#Seinen">Seinen</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Shounen">Shounen</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Slice">Slice of Life</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#Sport">Sport</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#Supernatural">Supernatural</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Thriller">Thriller</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#Time">Time Travel</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    </div>
+    <div class="container3">
+      <h3 class="group">Anime List</h3>
+      <div class="alphabet-list">
+        <ul>
+          <li class="alp-list"><a class="alp" href="##">#</a></li>
+          <li class="alp-list"><a class="alp" href="#A">A</a></li>
+          <li class="alp-list"><a class="alp" href="#B">B</a></li>
+          <li class="alp-list"><a class="alp" href="#C">C</a></li>
+          <li class="alp-list"><a class="alp" href="#D">D</a></li>
+          <li class="alp-list"><a class="alp" href="#E">E</a></li>
+          <li class="alp-list"><a class="alp" href="#F">F</a></li>
+          <li class="alp-list"><a class="alp" href="#G">G</a></li>
+          <li class="alp-list"><a class="alp" href="#H">H</a></li>
+          <li class="alp-list"><a class="alp" href="#I">I</a></li>
+          <li class="alp-list"><a class="alp" href="#J">J</a></li>
+          <li class="alp-list"><a class="alp" href="#K">K</a></li>
+          <li class="alp-list"><a class="alp" href="#L">L</a></li>
+          <li class="alp-list"><a class="alp" href="#M">M</a></li>
+          <li class="alp-list"><a class="alp" href="#N">N</a></li>
+          <li class="alp-list"><a class="alp" href="#O">O</a></li>
+          <li class="alp-list"><a class="alp" href="#P">P</a></li>
+          <li class="alp-list"><a class="alp" href="#Q">Q</a></li>
+          <li class="alp-list"><a class="alp" href="#R">R</a></li>
+          <li class="alp-list"><a class="alp" href="#S">S</a></li>
+          <li class="alp-list"><a class="alp" href="#T">T</a></li>
+          <li class="alp-list"><a class="alp" href="#U">U</a></li>
+          <li class="alp-list"><a class="alp" href="#V">V</a></li>
+          <li class="alp-list"><a class="alp" href="#W">W</a></li>
+          <li class="alp-list"><a class="alp" href="#X">X</a></li>
+          <li class="alp-list"><a class="alp" href="#Y">Y</a></li>
+          <li class="alp-list"><a class="alp" href="#Z">Z</a></li>
+        </ul>
+      </div>
+
+      <div class="anime-list">
+        <div class="letter">
+          <div id="##">
+            <h3><a class="group">#</a></h3>
+            <ul>
+              <li class="ani-list"><a>"Oshi no Ko"</a></li>
+              <li class="ani-list"><a>86</a></li>
+              <li class="ani-list"><a>86 Part 2</a></li>
+              <li class="ani-list"><a>86 Special Edition: Senya ni Akaku Hinageshi no Saku</a></li>
+              <li class="ani-list"><a>91 Days</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="letter">
+          <div id="#A">
+            <h3><a class="group">A</a></h3>
+            <ul>
+              <li class="ani-list"><a>Accel World</a></li>
+              <li class="ani-list"><a>Accel World EX</a></li>
+              <li class="ani-list"><a>Accel World Specials</a></li>
+              <li class="ani-list"><a>Accel World: Infinite∞Burst</a></li>
+              <li class="ani-list"><a>Acchi Kocchi</a></li>
+              <li class="ani-list"><a>Acchi Kocchi: Place=Princess</a></li>
+              <li class="ani-list"><a>Adachi to Shimamura</a></li>
+              <li class="ani-list"><a>Aharen-san wa Hakarenai</a></li>
+              <li class="ani-list"><a>Aho Girl</a></li>
+              <li class="ani-list"><a>Akame ga Kill!</a></li>
+              <li class="ani-list"><a>Akebi-chan no Sailor-fuku</a></li>
+              <li class="ani-list"><a>Akiba Maid Sensou</a></li>
+              <li class="ani-list"><a>Akkun to Kanojo</a></li>
+              <li class="ani-list"><a>Akudama Drive</a></li>
+              <li class="ani-list"><a>Akuma no Riddle</a></li>
+              <li class="ani-list"><a>Akuma no Riddle: Shousha wa Dare? Nukiuchi Test</a></li>
+              <li class="ani-list"><a>Aldnoah.Zero</a></li>
+              <li class="ani-list"><a>Aldnoah.Zero Part 2</a></li>
+              <li class="ani-list"><a>Amaama to Inazuma</a></li>
+              <li class="ani-list"><a>Amagi Brilliant Park</a></li>
+              <li class="ani-list"><a>Amagi Brilliant Park Specials</a></li>
+              <li class="ani-list"><a>Amagi Brilliant Park Tokubetsu-hen</a></li>
+              <li class="ani-list"><a>Ame wo Tsugeru Hyouryuu Danchi</a></li>
+              <li class="ani-list"><a>Angel Beats!</a></li>
+              <li class="ani-list"><a>Angel Beats! Another Epilogue</a></li>
+              <li class="ani-list"><a>Angel Beats! Specials</a></li>
+              <li class="ani-list"><a>Ani ni Tsukeru Kusuri wa Nai!</a></li>
+              <li class="ani-list"><a>Ani ni Tsukeru Kusuri wa Nai! 2</a></li>
+              <li class="ani-list"><a>Ani ni Tsukeru Kusuri wa Nai! 3</a></li>
+              <li class="ani-list"><a>Ani ni Tsukeru Kusuri wa Nai! 4</a></li>
+              <li class="ani-list"><a>Ani ni Tsukeru Kusuri wa Nai! 5</a></li>
+              <li class="ani-list"><a>Anohana: The Flower We Saw That Day</a></li>
+              <li class="ani-list"><a>Anohana: The Flower We Saw That Day The Movie</a></li>
+              <li class="ani-list"><a>Another</a></li>
+              <li class="ani-list"><a>Another OVA</a></li>
+              <li class="ani-list"><a>Ansatsu Kyoushitsu</a></li>
+              <li class="ani-list"><a>Ansatsu Kyoushitsu 2nd Season</a></li>
+              <li class="ani-list"><a>Ansatsu Kyoushitsu: 365-nichi no Jikan</a></li>
+              <li class="ani-list"><a>Appare-Ranman!</a></li>
+              <li class="ani-list"><a>Araburu Kisetsu no Otome-domo yo.</a></li>
+              <li class="ani-list"><a>Arakawa Under the Bridge</a></li>
+              <li class="ani-list"><a>Arakawa Under the Bridge x Bridge</a></li>
+              <li class="ani-list"><a>Arcana Famiglia</a></li>
+              <li class="ani-list"><a>Arcana Famiglia: Capriccio - stile Arcana Famiglia</a></li>
+              <li class="ani-list"><a>Arknights: Reimei Zensou</a></li>
+              <li class="ani-list"><a>Arknights: Fuyukomori Kaerimichi</a></li>
+              <li class="ani-list"><a>Arslan Senki</a></li>
+              <li class="ani-list"><a>Arslan Senki Gaiden</a></li>
+              <li class="ani-list"><a>Arslan Senki: Fuujin Ranbu</a></li>
+              <li class="ani-list"><a>Arte</a></li>
+              <li class="ani-list"><a>Asobi Asobase</a></li>
+              <li class="ani-list"><a>Asobi Asobase OVA</a></li>
+              <li class="ani-list"><a>Asobi Asobase Specials</a></li>
+              <li class="ani-list"><a>Assassins Pride</a></li>
+              <li class="ani-list"><a>Ayakashi Triangle</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="letter">
+          <div id="#B">
+            <h3><a class="group">B</a></h3>
+            <ul>
+              <li class="ani-list"><a>B: The Beginning</a></li>
+              <li class="ani-list"><a>B: The Beginning Succession</a></li>
+              <li class="ani-list"><a>Babylon</a></li>
+              <li class="ani-list"><a>Baka to Test to Shoukanjuu</a></li>
+              <li class="ani-list"><a>Baka to Test to Shoukanjuu: Mondai - Christmas ni Tsuite Kotae Nasai</a></li>
+              <li class="ani-list"><a>Baka to Test to Shoukanjuu Ni!</a></li>
+              <li class="ani-list"><a>Baka to Test to Shoukanjuu OVA</a></li>
+              <li class="ani-list"><a>Baka to Test to Shoukanjuu Specials</a></li>
+              <li class="ani-list"><a>Bakemonogatari</a></li>
+              <li class="ani-list"><a>Baki (2018)</a></li>
+              <li class="ani-list"><a>Baki (2020)</a></li>
+              <li class="ani-list"><a>Baki OVA</a></li>
+              <li class="ani-list"><a>Bakuman</a></li>
+              <li class="ani-list"><a>Bakuman 2nd Season</a></li>
+              <li class="ani-list"><a>Bakuman 3rd Season</a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a></a></li>
+            </ul>
+          </div>
+
+          <div class="letter">
+            <div id="#C">
+              <h3><a class="group">C</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#D">
+              <h3><a class="group">D</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#E">
+              <h3><a class="group">E</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#F">
+              <h3><a class="group">F</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#G">
+              <h3><a class="group">G</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+                <li class="ani-list"><a>Gotoubun no Hanayome</a></li>
+                <li class="ani-list"><a>Gotoubun no Hanayome ∬</a></li>
+                <li class="ani-list"><a>Gotoubun no Hanayome Movie</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#H">
+              <h3><a class="group">H</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#I">
+              <h3><a class="group">I</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#J">
+              <h3><a class="group">J</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#K">
+              <h3><a class="group">K</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#L">
+              <h3><a class="group">L</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#M">
+              <h3><a class="group">M</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#N">
+              <h3><a class="group">N</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#O">
+              <h3><a class="group">O</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#P">
+              <h3><a class="group">P</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#Q">
+              <h3><a class="group">Q</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#R">
+              <h3><a class="group">R</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#S">
+              <h3><a class="group">S</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+                <li class="ani-list"><a>Sangatsu no Lion</a></li>
+                <li class="ani-list"><a>Sangatsu no Lion 2nd Season</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#T">
+              <h3><a class="group">T</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#U">
+              <h3><a class="group">U</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#V">
+              <h3><a class="group">V</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#W">
+              <h3><a class="group">W</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#X">
+              <h3><a class="group">X</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#Y">
+              <h3><a class="group">Y</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="letter">
+            <div id="#Z">
+              <h3><a class="group">Z</a></h3>
+              <ul>
+                <li class="ani-list"><a></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
   </body>
+
 </html>
