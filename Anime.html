@@ -7,33 +7,39 @@
     <title>AniMend | List All Anime</title>
     <link rel="icon" href="img/logo.png" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#Home.html">
-            <img class="logo" src="img/logo.png" />AniMend</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#home.html">
+            <img src="img/logo.png" width="100px" height="74" style="margin: 0 15px;"
+              class="d-inline-block align-text-center">
+            AniMend
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Home.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Anime.html">Anime List</a>
+                <a class="nav-link" href="#anime.html">Anime List</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Movie">Movie</a>
+                <a class="nav-link" href="#movie.html">Movies</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -110,7 +116,14 @@
                   </li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link">Link</a>
+              </li>
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
         </div>
       </nav>
@@ -152,7 +165,7 @@
 
       <div class="anime-list">
         <div class="letter">
-          <div id="##">
+          <div id="#">
             <h3><a class="group">#</a></h3>
             <ul>
               <li class="ani-list"><a>"Oshi no Ko"</a></li>
@@ -165,7 +178,7 @@
         </div>
 
         <div class="letter">
-          <div id="#A">
+          <div id="A">
             <h3><a class="group">A</a></h3>
             <ul>
               <li class="ani-list"><a>Accel World</a></li>
@@ -186,6 +199,7 @@
               <li class="ani-list"><a>Akuma no Riddle: Shousha wa Dare? Nukiuchi Test</a></li>
               <li class="ani-list"><a>Aldnoah.Zero</a></li>
               <li class="ani-list"><a>Aldnoah.Zero Part 2</a></li>
+              <li class="ani-list"><a>Alice in Borderland</a></li>
               <li class="ani-list"><a>Amaama to Inazuma</a></li>
               <li class="ani-list"><a>Amagi Brilliant Park</a></li>
               <li class="ani-list"><a>Amagi Brilliant Park Specials</a></li>
@@ -228,7 +242,7 @@
         </div>
 
         <div class="letter">
-          <div id="#B">
+          <div id="B">
             <h3><a class="group">B</a></h3>
             <ul>
               <li class="ani-list"><a>B: The Beginning</a></li>
@@ -246,260 +260,1390 @@
               <li class="ani-list"><a>Bakuman</a></li>
               <li class="ani-list"><a>Bakuman 2nd Season</a></li>
               <li class="ani-list"><a>Bakuman 3rd Season</a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
-              <li class="ani-list"><a></a></li>
+              <li class="ani-list"><a>Barakamon</a></li>
+              <li class="ani-list"><a>Basilisk</a></li>
+              <li class="ani-list"><a>Basilisk: Ouka Ninpouchou</a></li>
+              <li class="ani-list"><a>Beatless</a></li>
+              <li class="ani-list"><a>Beatless Final Stage</a></li>
+              <li class="ani-list"><a>Beelzebub</a></li>
+              <li class="ani-list"><a>Bem</a></li>
+              <li class="ani-list"><a>Bem Movie: Become Human</a></li>
+              <li class="ani-list"><a>Berserk</a></li>
+              <li class="ani-list"><a>Berserk (2016)</a></li>
+              <li class="ani-list"><a>Berserk (2017)</a></li>
+              <li class="ani-list"><a>Berserk: Ougon Jidai-hen I - Haou no Tamago</a></li>
+              <li class="ani-list"><a>Berserk: Ougon Jidai-hen II - Doldrey Kouryaku</a></li>
+              <li class="ani-list"><a>Berserk: Ougon Jidai-hen III - Kourin</a></li>
+              <li class="ani-list"><a>Big Order</a></li>
+              <li class="ani-list"><a>Black Bullet</a></li>
+              <li class="ani-list"><a>Black Clover</a></li>
+              <li class="ani-list"><a>Black Clover: Mahou Tei no Ken</a></li>
+              <li class="ani-list"><a>Black Fox</a></li>
+              <li class="ani-list"><a>Black Lagoon</a></li>
+              <li class="ani-list"><a>Black Lagoon: The Second Barrage</a></li>
+              <li class="ani-list"><a>Black Lagoon: Roberta's Blood Trail</a></li>
+              <li class="ani-list"><a>Black★Rock Shooter</a></li>
+              <li class="ani-list"><a>Black★Rock Shooter OVA</a></li>
+              <li class="ani-list"><a>Black★★Rock Shooter: Dawn Fall</a></li>
+              <li class="ani-list"><a>Blame! Movie</a></li>
+              <li class="ani-list"><a>BlazBlue: Alter Memory</a></li>
+              <li class="ani-list"><a>Bleach</a></li>
+              <li class="ani-list"><a>Bleach: Memories in the Rain</a></li>
+              <li class="ani-list"><a>Bleach: The Sealed Sword Frenzy</a></li>
+              <li class="ani-list"><a>Bleach Movie 1: Memories of Nobody</a></li>
+              <li class="ani-list"><a>Bleach Movie 2: The DiamondDust Rebellion - Mou Hitotsu no Hyourinmaru</a></li>
+              <li class="ani-list"><a>Bleach Movie 3: Fade to Black - Kimi no Na wo Yobu</a></li>
+              <li class="ani-list"><a>Bleach Movie 4: Jigoku-hen</a></li>
+              <li class="ani-list"><a>Bleach: Sennen Kessen-hen</a></li>
+              <li class="ani-list"><a>Blend S</a></li>
+              <li class="ani-list"><a>Blood Lad</a></li>
+              <li class="ani-list"><a>Blood Lad OVA</a></li>
+              <li class="ani-list"><a>Blood-C</a></li>
+              <li class="ani-list"><a>Blood-C: The Last Dark</a></li>
+              <li class="ani-list"><a>Bloodivores</a></li>
+              <li class="ani-list"><a>BNA</a></li>
+              <li class="ani-list"><a>Bocchi the Rock!</a></li>
+              <li class="ani-list"><a>Boku dake ga Inai Machi</a></li>
+              <li class="ani-list"><a>Boku no Kanojo ga Majimesugiru Sho-bitch na Ken</a></li>
+              <li class="ani-list"><a>Boku no Kanojo ga Majimesugiru Sho-bitch na Ken OVA</a></li>
+              <li class="ani-list"><a>Boku no Kokoro no Yabai Yatsu</a></li>
+              <li class="ani-list"><a>Boku no Tonari ni Ankoku Hakaishin ga Imasu</a></li>
+              <li class="ani-list"><a>Boku wa Tomodachi ga Sukunai</a></li>
+              <li class="ani-list"><a>Boku wa Tomodachi ga Sukunai OVA</a></li>
+              <li class="ani-list"><a>Boku wa Tomodachi ga Sukunai Next</a></li>
+              <li class="ani-list"><a>Bokura wa Minna Kawai-sou</a></li>
+              <li class="ani-list"><a>Bokura wa Minna Kawai-sou: Hajimete no</a></li>
+              <li class="ani-list"><a>Bokutachi no Remake</a></li>
+              <li class="ani-list"><a>Bokutachi wa Benkyou ga Dekinai</a></li>
+              <li class="ani-list"><a>Bokutachi wa Benkyou ga Dekinai OVA</a></li>
+              <li class="ani-list"><a>Bokutachi wa Benkyou ga Dekinai!</a></li>
+              <li class="ani-list"><a>Bokutachi wa Benkyou ga Dekinai! OVA</a></li>
+              <li class="ani-list"><a>Boogiepop wa Warawanai</a></li>
+              <li class="ani-list"><a>Boogiepop wa Warawanai (2019)</a></li>
+              <li class="ani-list"><a>Btooom!</a></li>
+              <li class="ani-list"><a>Bubble</a></li>
+              <li class="ani-list"><a>Bungou Stray Dogs</a></li>
+              <li class="ani-list"><a>Bungou Stray Dogs 2nd Season</a></li>
+              <li class="ani-list"><a>Bungou Stray Dogs: Hitori Ayumu</a></li>
+              <li class="ani-list"><a>Bungou Stray Dogs: Dead Apple</a></li>
+              <li class="ani-list"><a>Bungou Stray Dogs 3rd Season</a></li>
+              <li class="ani-list"><a>Bungou Stray Dogs 4th Season</a></li>
+              <li class="ani-list"><a>Burn the Witch</a></li>
+              <li class="ani-list"><a>Busou Shoujo Machiavellianism</a></li>
             </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#C">
-              <h3><a class="group">C</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="C">
+            <h3><a class="group">C</a></h3>
+            <ul>
+              <li class="ani-list"><a>Caligula</a></li>
+              <li class="ani-list"><a>Canaan</a></li>
+              <li class="ani-list"><a>Carnival Phantasm</a></li>
+              <li class="ani-list"><a>Carnival Phantasm: HibiChika Special</a></li>
+              <li class="ani-list"><a>Carnival Phantasm EX Season</a></li>
+              <li class="ani-list"><a>Castlevania</a></li>
+              <li class="ani-list"><a>Castlevania Season 2</a></li>
+              <li class="ani-list"><a>Castlevania Season 3</a></li>
+              <li class="ani-list"><a>Castlevania Season 4</a></li>
+              <li class="ani-list"><a>Centaur no Nayami</a></li>
+              <li class="ani-list"><a>Chain Chronicle: Haecceitas no Hikari</a></li>
+              <li class="ani-list"><a>Chain Chronicle: Haecceitas no Hikari Part 1</a></li>
+              <li class="ani-list"><a>Chain Chronicle: Haecceitas no Hikari Part 2</a></li>
+              <li class="ani-list"><a>Chain Chronicle: Haecceitas no Hikari Part 3</a></li>
+              <li class="ani-list"><a>Chainsaw Man</a></li>
+              <li class="ani-list"><a>Chaos Dragon: Sekiryuu Seneki</a></li>
+              <li class="ani-list"><a>ChäoS;Child</a></li>
+              <li class="ani-list"><a>ChäoS;Child: Silent Sky</a></li>
+              <li class="ani-list"><a>ChäoS;HEAd</a></li>
+              <li class="ani-list"><a>Charlotte</a></li>
+              <li class="ani-list"><a>Charlotte: Tsuyoimono-tachi</a></li>
+              <li class="ani-list"><a>Chiyu Mahou no Machigatta Tsukaikata: Senjou wo Kakeru Kai</a></li>
+              <li class="ani-list"><a>Chrome Shelled Regios</a></li>
+              <li class="ani-list"><a>Chuunibyou demo Koi ga Shitai!</a></li>
+              <li class="ani-list"><a>Chuunibyou demo Koi ga Shitai! Depth of Field: Ai to Nikushimi Gekijou</a></li>
+              <li class="ani-list"><a>Chuunibyou demo Koi ga Shitai! Kirameki no... Slapstick Noel</a></li>
+              <li class="ani-list"><a>Chuunibyou demo Koi ga Shitai! Lite</a></li>
+              <li class="ani-list"><a>Chuunibyou demo Koi ga Shitai! Movie: Take On Me</a></li>
+              <li class="ani-list"><a>Chuunibyou demo Koi ga Shitai! Ren</a></li>
+              <li class="ani-list"><a>Chuunibyou demo Koi ga Shitai! Ren: The Rikka Wars</a></li>
+              <li class="ani-list"><a>Chuunibyou demo Koi ga Shitai! Ren Lite</a></li>
+              <li class="ani-list"><a>Chuunibyou demo Koi ga Shitai! Ren Specials</a></li>
+              <li class="ani-list"><a>Citrus</a></li>
+              <li class="ani-list"><a>Clannad</a></li>
+              <li class="ani-list"><a>Clannad Movie</a></li>
+              <li class="ani-list"><a>Clannad: Mou Hitotsu no Sekai, Tomoyo-hen</a></li>
+              <li class="ani-list"><a>Clannad: After Story</a></li>
+              <li class="ani-list"><a>Clannad: After Story - Mou Hitotsu no Sekai, Kyou-hen</a></li>
+              <li class="ani-list"><a>Claymore</a></li>
+              <li class="ani-list"><a>Clockwork Planet</a></li>
+              <li class="ani-list"><a>Cocolors</a></li>
+              <li class="ani-list"><a>Code Geass: Boukoku no Akito 1 - Yokuryuu wa Maiorita</a></li>
+              <li class="ani-list"><a>Code Geass: Boukoku no Akito 2 - Hikisakareshi Yokuryuu</a></li>
+              <li class="ani-list"><a>Code Geass: Boukoku no Akito 3 - Kagayaku Mono Ten yori Otsu</a></li>
+              <li class="ani-list"><a>Code Geass: Boukoku no Akito 4 - Nikushimi no Kioku kara</a></li>
+              <li class="ani-list"><a>Code Geass: Boukoku no Akito 5 - Itoshiki Mono-tachi e</a></li>
+              <li class="ani-list"><a>Code Geass: Fukkatsu no Lelouch</a></li>
+              <li class="ani-list"><a>Code Geass: Hangyaku no Lelouch</a></li>
+              <li class="ani-list"><a>Code Geass: Hangyaku no Lelouch - Nunnally in Wonderland</a></li>
+              <li class="ani-list"><a>Code Geass: Hangyaku no Lelouch R2</a></li>
+              <li class="ani-list"><a>Code Geass: Hangyaku no Lelouch I - Koudou</a></li>
+              <li class="ani-list"><a>Code Geass: Hangyaku no Lelouch II - Handou</a></li>
+              <li class="ani-list"><a>Code Geass: Hangyaku no Lelouch III - Oudou</a></li>
+              <li class="ani-list"><a>Code:Breaker</a></li>
+              <li class="ani-list"><a>Code:Breaker OVA</a></li>
+              <li class="ani-list"><a>Comet Lucifer</a></li>
+              <li class="ani-list"><a>Cop Craft</a></li>
+              <li class="ani-list"><a>Coppelion</a></li>
+              <li class="ani-list"><a>Cowboy Bebop</a></li>
+              <li class="ani-list"><a>Cowboy Bebop: Tengoku no Tobira</a></li>
+              <li class="ani-list"><a>Cyberpunk: Edgerunners</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#D">
-              <h3><a class="group">D</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="D">
+            <h3><a class="group">D</a></h3>
+            <ul>
+              <li class="ani-list"><a>D-Frag!</a></li>
+              <li class="ani-list"><a>D-Frag! OVA</a></li>
+              <li class="ani-list"><a>D.Gray-man</a></li>
+              <li class="ani-list"><a>D.Gray-man Hallow</a></li>
+              <li class="ani-list"><a>Dagashi Kashi</a></li>
+              <li class="ani-list"><a>Dagashi Kashi 2</a></li>
+              <li class="ani-list"><a>Danchigai</a></li>
+              <li class="ani-list"><a>Danganronpa: The Animation</a></li>
+              <li class="ani-list"><a>Danganronpa 3: The End of Kibougamine Gakuen - Kibou-hen</a></li>
+              <li class="ani-list"><a>Danganronpa 3: The End of Kibougamine Gakuen - Mirai-hen</a></li>
+              <li class="ani-list"><a>Danganronpa 3: The End of Kibougamine Gakuen - Zetsubou-hen</a></li>
+              <li class="ani-list"><a>Danna ga Nani wo Itteiru ka Wakaranai Ken</a></li>
+              <li class="ani-list"><a>Danna ga Nani wo Itteiru ka Wakaranai Ken 2 Sure-me</a></li>
+              <li class="ani-list"><a>Danshi Koukousei no Nichijou</a></li>
+              <li class="ani-list"><a>Danshi Koukousei no Nichijou Specials</a></li>
+              <li class="ani-list"><a>Dantalian no Shoka</a></li>
+              <li class="ani-list"><a>Dantalian no Shoka: Ibarahime</a></li>
+              <li class="ani-list"><a>Dark Gathering</a></li>
+              <li class="ani-list"><a>Darker than Black: Kuro no Keiyakusha</a></li>
+              <li class="ani-list"><a>Darker than Black: Kuro no Keiyakusha Gaiden</a></li>
+              <li class="ani-list"><a>Darker than Black: Ryuusei no Gemini</a></li>
+              <li class="ani-list"><a>Darwin's Game</a></li>
+              <li class="ani-list"><a>Deadman Wonderland</a></li>
+              <li class="ani-list"><a>Deadman Wonderland OVA</a></li>
+              <li class="ani-list"><a>Death Billiards</a></li>
+              <li class="ani-list"><a>Death Note</a></li>
+              <li class="ani-list"><a>Death Parade</a></li>
+              <li class="ani-list"><a>Deatte 5-byou de Battle</a></li>
+              <li class="ani-list"><a>Deca-Dence</a></li>
+              <li class="ani-list"><a>Deep Insanity: The Lost Child</a></li>
+              <li class="ani-list"><a>Dekoboko Majo no Oyako Jijou</a></li>
+              <li class="ani-list"><a>Demi-chan wa Kataritai</a></li>
+              <li class="ani-list"><a>Denki-gai no Honya-san</a></li>
+              <li class="ani-list"><a>Denpa Onna to Seishun Otoko</a></li>
+              <li class="ani-list"><a>Detroit Metal City</a></li>
+              <li class="ani-list"><a>Devils Line</a></li>
+              <li class="ani-list"><a>Devils Line: Anytime Anywhere</a></li>
+              <li class="ani-list"><a>Dies Irae</a></li>
+              <li class="ani-list"><a>Dies Irae: To the Ring Reincarnation</a></li>
+              <li class="ani-list"><a>Dimension W</a></li>
+              <li class="ani-list"><a>Dimension W Special</a></li>
+              <li class="ani-list"><a>Dimension W: W no Tobira Online - Rose no Onayami Soudanshitsu</a></li>
+              <li class="ani-list"><a>Dorei-ku The Animation</a></li>
+              <li class="ani-list"><a>Dorohedoro</a></li>
+              <li class="ani-list"><a>Dororo</a></li>
+              <li class="ani-list"><a>Doukyonin wa Hiza, Tokidoki, Atama no Ue</a></li>
+              <li class="ani-list"><a>Drifters</a></li>
+              <li class="ani-list"><a>Drifters OVA</a></li>
+              <li class="ani-list"><a>Drifters Specials</a></li>
+              <li class="ani-list"><a>Dumbbell Nan Kilo Moteru?</a></li>
+              <li class="ani-list"><a>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka</a></li>
+              <li class="ani-list"><a>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka OVA</a></li>
+              <li class="ani-list"><a>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka Gaiden: Sword
+                  Oratoria</a></li>
+              <li class="ani-list"><a>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka Movie: Orion no Ya</a>
+              </li>
+              <li class="ani-list"><a>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka II</a></li>
+              <li class="ani-list"><a>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka II OVA</a></li>
+              <li class="ani-list"><a>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III</a></li>
+              <li class="ani-list"><a>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III OVA</a></li>
+              <li class="ani-list"><a>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka IV: Shin Shou -
+                  Meikyuu-hen</a></li>
+              <li class="ani-list"><a>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka IV: Fuka Shou -
+                  Yakusai-hen</a></li>
+              <li class="ani-list"><a>Durarara!!</a></li>
+              <li class="ani-list"><a>Durarara!!x2 Ketsu</a></li>
+              <li class="ani-list"><a>Durarara!!x2 Ketsu: Dufufufu!!</a></li>
+              <li class="ani-list"><a>Durarara!!x2 Shou</a></li>
+              <li class="ani-list"><a>Durarara!!x2 Ten</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#E">
-              <h3><a class="group">E</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="E">
+            <h3><a class="group">E</a></h3>
+            <ul>
+              <li class="ani-list"><a>Eisen Flügel</a></li>
+              <li class="ani-list"><a>Enen no Shouboutai</a></li>
+              <li class="ani-list"><a>Enen no Shouboutai: Ni no Shou</a></li>
+              <li class="ani-list"><a>Enen no Shouboutai: San no Shou</a></li>
+              <li class="ani-list"><a>Engage Kiss</a></li>
+              <li class="ani-list"><a>Eromanga-sensei</a></li>
+              <li class="ani-list"><a>Eromanga-sensei OVA</a></li>
+              <li class="ani-list"><a>Evangelion: 1.0 You Are (Not) Alone</a></li>
+              <li class="ani-list"><a>Evangelion: 2.0 You Can (Not) Advance</a></li>
+              <li class="ani-list"><a>Evangelion: 3.0 You Can (Not) Redo</a></li>
+              <li class="ani-list"><a>Evangelion: 3.0+1.0 Thrice Upon a Time</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#F">
-              <h3><a class="group">F</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="F">
+            <h3><a class="group">F</a></h3>
+            <ul>
+              <li class="ani-list"><a>Fate/Apocrypha</a></li>
+              <li class="ani-list"><a>Fate/Extra: Last Encore</a></li>
+              <li class="ani-list"><a>Fate/Extra: Last Encore - Illustrias Tendousetsu</a></li>
+              <li class="ani-list"><a>Fate/Grand Carnival</a></li>
+              <li class="ani-list"><a>Fate/Grand Order: First Order</a></li>
+              <li class="ani-list"><a>Fate/Grand Order: Moonlight/Lostroom</a></li>
+              <li class="ani-list"><a>Fate/Grand Order: Shinsei Entaku Ryouiki Camelot 1 - Wandering; Agateram</a></li>
+              <li class="ani-list"><a>Fate/Grand Order: Shinsei Entaku Ryouiki Camelot 2 - Paladin; Agateram</a></li>
+              <li class="ani-list"><a>Fate/Grand Order: Shuukyoku Tokuiten - Kani Jikan Shinden Solomon</a></li>
+              <li class="ani-list"><a>Fate/Grand Order: Zettai Majuu Sensen Babylonia</a></li>
+              <li class="ani-list"><a>Fate/stay night</a></li>
+              <li class="ani-list"><a>Fate/stay night Movie: Heaven's Feel - I. Presage Flower</a></li>
+              <li class="ani-list"><a>Fate/stay night Movie: Heaven's Feel - II. Lost Butterfly</a></li>
+              <li class="ani-list"><a>Fate/stay night Movie: Heaven's Feel - III. Spring Song</a></li>
+              <li class="ani-list"><a>Fate/stay night: Unlimited Blade Works</a></li>
+              <li class="ani-list"><a>Fate/stay night: Unlimited Blade Works 2nd Season</a></li>
+              <li class="ani-list"><a>Fate/strange Fake: Whispers of Dawn</a></li>
+              <li class="ani-list"><a>Fate/Zero</a></li>
+              <li class="ani-list"><a>Fate/Zero 2nd Season</a></li>
+              <li class="ani-list"><a>Fugou Keiji: Balance:Unlimited</a></li>
+              <li class="ani-list"><a>Full Metal Panic!</a></li>
+              <li class="ani-list"><a>Full Metal Panic? Fumoffu</a></li>
+              <li class="ani-list"><a>Full Metal Panic! The Second Raid</a></li>
+              <li class="ani-list"><a>Full Metal Panic! The Second Raid OVA</a></li>
+              <li class="ani-list"><a>Full Metal Panic! Invisible Victory</a></li>
+              <li class="ani-list"><a>Fullmetal Alchemist: Brotherhood</a></li>
+              <li class="ani-list"><a>Fullmetal Alchemist: Brotherhood Specials</a></li>
+              <li class="ani-list"><a>Fullmetal Alchemist: The Sacred Star of Milos</a></li>
+              <li class="ani-list"><a>Fumetsu no Anata e</a></li>
+              <li class="ani-list"><a>Fumetsu no Anata e 2nd Season</a></li>
+              <li class="ani-list"><a>Futoku no Guild</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#G">
-              <h3><a class="group">G</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-                <li class="ani-list"><a>Gotoubun no Hanayome</a></li>
-                <li class="ani-list"><a>Gotoubun no Hanayome ∬</a></li>
-                <li class="ani-list"><a>Gotoubun no Hanayome Movie</a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="G">
+            <h3><a class="group">G</a></h3>
+            <ul>
+              <li class="ani-list"><a>Gabriel DropOut</a></li>
+              <li class="ani-list"><a>Gabriel DropOut Specials</a></li>
+              <li class="ani-list"><a>Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu</a></li>
+              <li class="ani-list"><a>Gamers!</a></li>
+              <li class="ani-list"><a>Ganbare Douki-chan</a></li>
+              <li class="ani-list"><a>Gangsta.</a></li>
+              <li class="ani-list"><a>Gate: Jieitai Kanochi nite, Kaku Tatakaeri</a></li>
+              <li class="ani-list"><a>Gate: Jieitai Kanochi nite, Kaku Tatakaeri Part 2</a></li>
+              <li class="ani-list"><a>Gekkan Shoujo Nozaki-kun</a></li>
+              <li class="ani-list"><a>Gekkan Shoujo Nozaki-kun Specials</a></li>
+              <li class="ani-list"><a>Getsuyoubi no Tawawa</a></li>
+              <li class="ani-list"><a>Getsuyoubi no Tawawa 2</a></li>
+              <li class="ani-list"><a>Gintama</a></li>
+              <li class="ani-list"><a>Gintama Movie 1: Shinyaku Benizakura-hen</a></li>
+              <li class="ani-list"><a>Gintama Movie 2: Kanketsu-hen - Yorozuya yo Eien Nare</a></li>
+              <li class="ani-list"><a>Gintama° (2015)</a></li>
+              <li class="ani-list"><a>Gintama°: Aizome Kaori-hen</a></li>
+              <li class="ani-list"><a>Gintama. (2017)</a></li>
+              <li class="ani-list"><a>Gintama.: Porori-hen</a></li>
+              <li class="ani-list"><a>Gintama.: Shirogane no Tamashii-hen</a></li>
+              <li class="ani-list"><a>Gintama.: Shirogane no Tamashii-hen - Kouhan-sen</a></li>
+              <li class="ani-list"><a>Gintama: The Semi-Final</a></li>
+              <li class="ani-list"><a>Gintama: The Final</a></li>
+              <li class="ani-list"><a>Gleipnir</a></li>
+              <li class="ani-list"><a>Goblin Slayer</a></li>
+              <li class="ani-list"><a>Goblin Slayer: Goblin's Crown</a></li>
+              <li class="ani-list"><a>Goblin Slayer 2nd Season</a></li>
+              <li class="ani-list"><a>God Eater</a></li>
+              <li class="ani-list"><a>Golden Kamuy</a></li>
+              <li class="ani-list"><a>Golden Kamuy OVA</a></li>
+              <li class="ani-list"><a>Golden Kamuy 2nd Season</a></li>
+              <li class="ani-list"><a>Golden Kamuy 2nd Season OVA</a></li>
+              <li class="ani-list"><a>Golden Kamuy 3rd Season</a></li>
+              <li class="ani-list"><a>Golden Kamuy 4th Season</a></li>
+              <li class="ani-list"><a>Golden Time</a></li>
+              <li class="ani-list"><a>Gosick</a></li>
+              <li class="ani-list"><a>Gotoubun no Hanayome</a></li>
+              <li class="ani-list"><a>Gotoubun no Hanayome ∬</a></li>
+              <li class="ani-list"><a>Gotoubun no Hanayome Movie</a></li>
+              <li class="ani-list"><a>Granblue Fantasy The Animation</a></li>
+              <li class="ani-list"><a>Granblue Fantasy The Animation Specials</a></li>
+              <li class="ani-list"><a>Granblue Fantasy The Animation Season 2</a></li>
+              <li class="ani-list"><a>Granblue Fantasy The Animation Season 2 Extras</a></li>
+              <li class="ani-list"><a>Grancrest Senki</a></li>
+              <li class="ani-list"><a>Grand Blue</a></li>
+              <li class="ani-list"><a>Great Pretender</a></li>
+              <li class="ani-list"><a>Grisaia no Kajitsu</a></li>
+              <li class="ani-list"><a>Grisaia no Kajitsu Specials</a></li>
+              <li class="ani-list"><a>Grisaia no Meikyuu: Caprice no Mayu 0</a></li>
+              <li class="ani-list"><a>Grisaia no Meikyuu: Caprice no Mayu 0 Specials</a></li>
+              <li class="ani-list"><a>Grisaia no Rakuen</a></li>
+              <li class="ani-list"><a>Grisaia no Rakuen Specials</a></li>
+              <li class="ani-list"><a>Grisaia: Phantom Trigger The Animation</a></li>
+              <li class="ani-list"><a>Grisaia: Phantom Trigger The Animation - Stargazer</a></li>
+              <li class="ani-list"><a>Guilty Crown</a></li>
+              <li class="ani-list"><a>Guilty Crown: Lost Christmas - An Episode of Port Town</a></li>
+              <li class="ani-list"><a>Guin Saga</a></li>
+              <li class="ani-list"><a>Gochuumon wa Usagi desu ka?</a></li>
+              <li class="ani-list"><a>Gochuumon wa Usagi desu ka? Bloom</a></li>
+              <li class="ani-list"><a>Gochuumon wa Usagi desu ka??</a></li>
+              <li class="ani-list"><a>Gochuumon wa Usagi desu ka?? Dear My Sister</a></li>
+              <li class="ani-list"><a>Gochuumon wa Usagi desu ka?? Sing for You</a></li>
+              <li class="ani-list"><a>Goku Sayonara Zetsubou Sensei</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#H">
-              <h3><a class="group">H</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="H">
+            <h3><a class="group">H</a></h3>
+            <ul>
+              <li class="ani-list"><a>Hai to Gensou no Grimgar</a></li>
+              <li class="ani-list"><a>Hai to Gensou no Grimgar Specials</a></li>
+              <li class="ani-list"><a>Haikyuu!!</a></li>
+              <li class="ani-list"><a>Haikyuu!! OVA</a></li>
+              <li class="ani-list"><a>Haikyuu!! Second Season</a></li>
+              <li class="ani-list"><a>Haikyuu!! Second Season OVA</a></li>
+              <li class="ani-list"><a>Haikyuu!! Karasuno Koukou vs. Shiratorizawa Gakuen Koukou</a></li>
+              <li class="ani-list"><a>Haikyuu!! Riku vs. Kuu</a></li>
+              <li class="ani-list"><a>Haikyuu!! To the Top</a></li>
+              <li class="ani-list"><a>Haikyuu!! To the Top Part 2</a></li>
+              <li class="ani-list"><a>Haikyuu!! Final</a></li>
+              <li class="ani-list"><a>Hakata Tonkotsu Ramens</a></li>
+              <li class="ani-list"><a>Hakozume: Kouban Joshi no Gyakushuu</a></li>
+              <li class="ani-list"><a>Hamatora The Animation</a></li>
+              <li class="ani-list"><a>Hanamonogatari</a></li>
+              <li class="ani-list"><a>Handa-kun</a></li>
+              <li class="ani-list"><a>Hanebado!</a></li>
+              <li class="ani-list"><a>Hanma Baki: Son of Ogre</a></li>
+              <li class="ani-list"><a>Hanma Baki: Son of Ogre 2nd Season</a></li>
+              <li class="ani-list"><a>Happy Sugar Life</a></li>
+              <li class="ani-list"><a>Harmony</a></li>
+              <li class="ani-list"><a>Hataraku Maou-sama!</a></li>
+              <li class="ani-list"><a>Hataraku Maou-sama!!</a></li>
+              <li class="ani-list"><a>Hataraku Saibou</a></li>
+              <li class="ani-list"><a>Hataraku Saibou Black</a></li>
+              <li class="ani-list"><a>Hataraku Saibou Specials</a></li>
+              <li class="ani-list"><a>Hataraku Saibou: Kaze Shoukougun</a></li>
+              <li class="ani-list"><a>Hataraku Saibou: Necchuushou - Moshimo Pocari Sweat ga Attara</a></li>
+              <li class="ani-list"><a>Hataraku Saibou!!</a></li>
+              <li class="ani-list"><a>Hello World</a></li>
+              <li class="ani-list"><a>Hellsing</a></li>
+              <li class="ani-list"><a>Hellsing Ultimate</a></li>
+              <li class="ani-list"><a>Hellsing: The Dawn</a></li>
+              <li class="ani-list"><a>Hero Mask</a></li>
+              <li class="ani-list"><a>Hero Mask 2nd Season</a></li>
+              <li class="ani-list"><a>Highschool of the Dead</a></li>
+              <li class="ani-list"><a>Highschool of the Dead: Drifters of the Dead</a></li>
+              <li class="ani-list"><a>Higurashi no Naku Koro ni</a></li>
+              <li class="ani-list"><a>Higurashi no Naku Koro ni Kai</a></li>
+              <li class="ani-list"><a>Higurashi no Naku Koro ni Kai Specials</a></li>
+              <li class="ani-list"><a>Higurashi no Naku Koro ni Kaku: Outbreak</a></li>
+              <li class="ani-list"><a>Higurashi no Naku Koro ni Kira</a></li>
+              <li class="ani-list"><a>Higurashi no Naku Koro ni Rei</a></li>
+              <li class="ani-list"><a>Higurashi no Naku Koro ni Gou</a></li>
+              <li class="ani-list"><a>Higurashi no Naku Koro ni Sotsu</a></li>
+              <li class="ani-list"><a>Higurashi no Naku Koro ni Special: Nekogoroshi-hen</a></li>
+              <li class="ani-list"><a>Himouto! Umaru-chan</a></li>
+              <li class="ani-list"><a>Himouto! Umaru-chanS</a></li>
+              <li class="ani-list"><a>Himouto! Umaru-chan OVA</a></li>
+              <li class="ani-list"><a>Himouto! Umaru-chan R</a></li>
+              <li class="ani-list"><a>Hinamatsuri</a></li>
+              <li class="ani-list"><a>Hitoribocchi no ○○ Seikatsu</a></li>
+              <li class="ani-list"><a>Hitsugi no Chaika</a></li>
+              <li class="ani-list"><a>Hitsugi no Chaika OVA</a></li>
+              <li class="ani-list"><a>Hitsugi no Chaika: Avenging Battle</a></li>
+              <li class="ani-list"><a>Hori-san to Miyamura-kun</a></li>
+              <li class="ani-list"><a>Horimiya</a></li>
+              <li class="ani-list"><a>Hortensia Saga</a></li>
+              <li class="ani-list"><a>Hotarubi no Mori e</a></li>
+              <li class="ani-list"><a>Hunter x Hunter</a></li>
+              <li class="ani-list"><a>Hunter x Hunter Movie 1: Phantom Rouge</a></li>
+              <li class="ani-list"><a>Hunter x Hunter Movie 2: The Last Mission</a></li>
+              <li class="ani-list"><a>Hunter x Hunter OVA</a></li>
+              <li class="ani-list"><a>Hunter x Hunter OVA 2</a></li>
+              <li class="ani-list"><a>Hunter x Hunter OVA 3</a></li>
+              <li class="ani-list"><a>Hunter x Hunter (2011)</a></li>
+              <li class="ani-list"><a>Hyouka</a></li>
+              <li class="ani-list"><a>Hyouka: Motsubeki Mono wa</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#I">
-              <h3><a class="group">I</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="I">
+            <h3><a class="group">I</a></h3>
+            <ul>
+              <li class="ani-list"><a>ID:INVADED</a></li>
+              <li class="ani-list"><a>Ijiranaide, Nagatoro-san</a></li>
+              <li class="ani-list"><a>Ijiranaide, Nagatoro-san 2nd Attack</a></li>
+              <li class="ani-list"><a>Ikebukuro West Gate Park</a></li>
+              <li class="ani-list"><a>Imouto sae Ireba Ii.</a></li>
+              <li class="ani-list"><a>Imouto sae Ireba Ii. Specials</a></li>
+              <li class="ani-list"><a>Inari, Konkon, Koi Iroha</a></li>
+              <li class="ani-list"><a>Inari, Konkon, Koi Iroha OVA</a></li>
+              <li class="ani-list"><a>Inou-Battle wa Nichijou-kei no Naka de</a></li>
+              <li class="ani-list"><a>Inuyashiki</a></li>
+              <li class="ani-list"><a>Isekai Ojisan</a></li>
+              <li class="ani-list"><a>Isekai Shikkaku</a></li>
+              <li class="ani-list"><a>Ishuzoku Reviewers</a></li>
+              <li class="ani-list"><a>Itsudatte Bokura no Koi wa 10 cm Datta.</a></li>
+              <li class="ani-list"><a>Iwa Kakeru! Sport Climbing Girls</a></li>
+              <li class="ani-list"><a>Iya na Kao sare nagara Opantsu Misete Moraitai</a></li>
+              <li class="ani-list"><a>Iya na Kao sare nagara Opantsu Misete Moraitai 2</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#J">
-              <h3><a class="group">J</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="J">
+            <h3><a class="group">J</a></h3>
+            <ul>
+              <li class="ani-list"><a>Jahy-sama wa Kujikenai!</a></li>
+              <li class="ani-list"><a>Jashin-chan Dropkick</a></li>
+              <li class="ani-list"><a>Jashin-chan Dropkick'</a></li>
+              <li class="ani-list"><a>Jashin-chan Dropkick X</a></li>
+              <li class="ani-list"><a>Jibaku Shounen Hanako-kun</a></li>
+              <li class="ani-list"><a>Jigokuraku</a></li>
+              <li class="ani-list"><a>Jikan no Shihaisha</a></li>
+              <li class="ani-list"><a>Jitsu wa Watashi wa</a></li>
+              <li class="ani-list"><a>JoJo's Bizarre Adventure</a></li>
+              <li class="ani-list"><a>JoJo's Bizarre Adventure: Diamond is Unbreakable</a></li>
+              <li class="ani-list"><a>JoJo's Bizarre Adventure: Golden Wind</a></li>
+              <li class="ani-list"><a>JoJo's Bizarre Adventure: Stardust Crusaders</a></li>
+              <li class="ani-list"><a>JoJo's Bizarre Adventure: Stardust Crusaders - Battle in Egypt</a></li>
+              <li class="ani-list"><a>JoJo's Bizarre Adventure: Stone Ocean</a></li>
+              <li class="ani-list"><a>JoJo's Bizarre Adventure: Stone Ocean Part 2</a></li>
+              <li class="ani-list"><a>JoJo's Bizarre Adventure: Stone Ocean Part 3</a></li>
+              <li class="ani-list"><a>Joker Game</a></li>
+              <li class="ani-list"><a>Jormungand</a></li>
+              <li class="ani-list"><a>Jormungand: Perfect Order</a></li>
+              <li class="ani-list"><a>Josee to Tora to Sakana-tachi</a></li>
+              <li class="ani-list"><a>Joshikousei no Mudazukai</a></li>
+              <li class="ani-list"><a>Jujutsu Kaisen</a></li>
+              <li class="ani-list"><a>Jujutsu Kaisen 0 Movie</a></li>
+              <li class="ani-list"><a>Jujutsu Kaisen 2nd Season</a></li>
+              <li class="ani-list"><a>Just Because!</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#K">
-              <h3><a class="group">K</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="K">
+            <h3><a class="group">K</a></h3>
+            <ul>
+              <li class="ani-list"><a>K</a></li>
+              <li class="ani-list"><a>K: Missing Kings</a></li>
+              <li class="ani-list"><a>K: Return of Kings</a></li>
+              <li class="ani-list"><a>K: SEVEN STORIES "R:B ~BLAZE~"</a></li>
+              <li class="ani-list"><a>Kageki Shoujo!!</a></li>
+              <li class="ani-list"><a>Kaguya-sama: Love is War</a></li>
+              <li class="ani-list"><a>Kaguya-sama: Love is War OVA</a></li>
+              <li class="ani-list"><a>Kaguya-sama: Love is War Season 2</a></li>
+              <li class="ani-list"><a>Kaguya-sama: Love is War - Ultra Romantic</a></li>
+              <li class="ani-list"><a>Kaguya-sama: Love is War - Ultra Romantic "Yu Ishigami Wants to Chat"</a></li>
+              <li class="ani-list"><a>Kaguya-sama: Love is War - The First Kiss That Never Ends</a></li>
+              <li class="ani-list"><a>Kai Byoui Ramune</a></li>
+              <li class="ani-list"><a>Kaiju No. 8</a></li>
+              <li class="ani-list"><a>Kaizoku Oujo</a></li>
+              <li class="ani-list"><a>Kakegurui</a></li>
+              <li class="ani-list"><a>Kakegurui Twin</a></li>
+              <li class="ani-list"><a>Kakegurui××</a></li>
+              <li class="ani-list"><a>Kakkou no Iinazuke</a></li>
+              <li class="ani-list"><a>Kakushigoto</a></li>
+              <li class="ani-list"><a>Kakushigoto Movie</a></li>
+              <li class="ani-list"><a>Kami no Tou</a></li>
+              <li class="ani-list"><a>Kami wa Game ni Ueteiru.</a></li>
+              <li class="ani-list"><a>Kaminaki Sekai no Kamisama Katsudou</a></li>
+              <li class="ani-list"><a>Kamisama no Inai Nichiyoubi</a></li>
+              <li class="ani-list"><a>Kamisama no Memochou</a></li>
+              <li class="ani-list"><a>Kämpfer</a></li>
+              <li class="ani-list"><a>Kämpfer für die Liebe</a></li>
+              <li class="ani-list"><a>Kanamemo</a></li>
+              <li class="ani-list"><a>Kanata no Astra</a></li>
+              <li class="ani-list"><a>Kanojo mo Kanojo</a></li>
+              <li class="ani-list"><a>Kara no Kyoukai Movie 1: Fukan Fuukei</a></li>
+              <li class="ani-list"><a>Kara no Kyoukai Movie 2: Satsujin Kousatsu (Zen)</a></li>
+              <li class="ani-list"><a>Kara no Kyoukai Movie 3: Tsuukaku Zanryuu</a></li>
+              <li class="ani-list"><a>Kara no Kyoukai Movie 4: Garan no Dou</a></li>
+              <li class="ani-list"><a>Kara no Kyoukai Movie 5: Mujun Rasen</a></li>
+              <li class="ani-list"><a>Kara no Kyoukai Movie 6: Boukyaku Rokuon</a></li>
+              <li class="ani-list"><a>Kara no Kyoukai Movie 7: Satsujin Kousatsu (Go)</a></li>
+              <li class="ani-list"><a>Kara no Kyoukai Movie 8: Shuushou</a></li>
+              <li class="ani-list"><a>Kara no Kyoukai Movie: Mirai Fukuin</a></li>
+              <li class="ani-list"><a>Kara no Kyoukai Movie: Mirai Fukuin - Extra Chorus</a></li>
+              <li class="ani-list"><a>Karakai Jouzu no Takagi-san</a></li>
+              <li class="ani-list"><a>Karakai Jouzu no Takagi-san OVA</a></li>
+              <li class="ani-list"><a>Karakai Jouzu no Takagi-san 2</a></li>
+              <li class="ani-list"><a>Karakai Jouzu no Takagi-san 3</a></li>
+              <li class="ani-list"><a>Karakai Jouzu no Takagi-san Movie</a></li>
+              <li class="ani-list"><a>Karakuri Circus</a></li>
+              <li class="ani-list"><a>Katanagatari</a></li>
+              <li class="ani-list"><a>Katsute Kami Datta Kemono-tachi e</a></li>
+              <li class="ani-list"><a>Kawaii dake ja Nai Shikimori-san</a></li>
+              <li class="ani-list"><a>Keijo!!!!!!!!</a></li>
+              <li class="ani-list"><a>Keijo!!!!!!!! Specials</a></li>
+              <li class="ani-list"><a>Keishichou Tokumubu Tokushu Kyouakuhan Taisakushitsu Dainanaka: Tokunana</a></li>
+              <li class="ani-list"><a>Keishichou Tokumubu Tokushu Kyouakuhan Taisakushitsu Dainanaka: Tokunana OVA</a>
+              </li>
+              <li class="ani-list"><a>Kekkai Sensen</a></li>
+              <li class="ani-list"><a>Kekkai Sensen: Ousama no Restaurant no Ousama</a></li>
+              <li class="ani-list"><a>Kekkai Sensen & Beyond</a></li>
+              <li class="ani-list"><a>Kekkai Sensen & Beyond: Zapp Renfro Ingaouhouchuu!!/Baccardio no Shizuku</a></li>
+              <li class="ani-list"><a>Keppeki Danshi! Aoyama-kun</a></li>
+              <li class="ani-list"><a>Kijin Gentoushou</a></li>
+              <li class="ani-list"><a>Kill la Kill</a></li>
+              <li class="ani-list"><a>Kill la Kill Specials</a></li>
+              <li class="ani-list"><a>Kimetsu no Yaiba</a></li>
+              <li class="ani-list"><a>Kimetsu no Yaiba: Mugen Ressha-hen</a></li>
+              <li class="ani-list"><a>Kimetsu no Yaiba: Yuukaku-hen</a></li>
+              <li class="ani-list"><a>Kimetsu no Yaiba: Katanakaji no Sato-hen</a></li>
+              <li class="ani-list"><a>Kimi no Na wa</a></li>
+              <li class="ani-list"><a>Kimi no Suizou wo Tabetai</a></li>
+              <li class="ani-list"><a>Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen</a></li>
+              <li class="ani-list"><a>Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen Season II</a>
+              </li>
+              <li class="ani-list"><a>Kingdom</a></li>
+              <li class="ani-list"><a>Kingdom 2nd Season</a></li>
+              <li class="ani-list"><a>Kingdom 3rd Season</a></li>
+              <li class="ani-list"><a>Kingdom 4th Season</a></li>
+              <li class="ani-list"><a>Kino no Tabi: The Beautiful World - The Animated Series</a></li>
+              <li class="ani-list"><a>Kiseijuu: Sei no Kakuritsu</a></li>
+              <li class="ani-list"><a>Kiznaiver</a></li>
+              <li class="ani-list"><a>Kizumonogatari I: Tekketsu-hen</a></li>
+              <li class="ani-list"><a>Kizumonogatari II: Nekketsu-hen</a></li>
+              <li class="ani-list"><a>Kizumonogatari III: Reiketsu-hen</a></li>
+              <li class="ani-list"><a>Kobayashi-san Chi no Maid Dragon</a></li>
+              <li class="ani-list"><a>Kobayashi-san Chi no Maid Dragon Specials</a></li>
+              <li class="ani-list"><a>Kobayashi-san Chi no Maid Dragon S</a></li>
+              <li class="ani-list"><a>Kobayashi-san Chi no Maid Dragon S Specials</a></li>
+              <li class="ani-list"><a>Koe no Katachi</a></li>
+              <li class="ani-list"><a>Koi to Senkyo to Chocolate</a></li>
+              <li class="ani-list"><a>Koi to Uso</a></li>
+              <li class="ani-list"><a>Koi to Uso OVA</a></li>
+              <li class="ani-list"><a>Koi to Yobu ni wa Kimochi Warui</a></li>
+              <li class="ani-list"><a>Koi wa Ameagari no You ni</a></li>
+              <li class="ani-list"><a>Koi wa Sekai Seifuku no Ato de</a></li>
+              <li class="ani-list"><a>Koisuru Asteroid</a></li>
+              <li class="ani-list"><a>Komi-san wa, Comyushou desu.</a></li>
+              <li class="ani-list"><a>Komi-san wa, Comyushou desu. 2nd Season</a></li>
+              <li class="ani-list"><a>Kono Oto Tomare!</a></li>
+              <li class="ani-list"><a>Kono Oto Tomare! Part 2</a></li>
+              <li class="ani-list"><a>Kono Subarashii Sekai ni Bakuen wo!</a></li>
+              <li class="ani-list"><a>Kono Subarashii Sekai ni Shukufuku wo!</a></li>
+              <li class="ani-list"><a>Kono Subarashii Sekai ni Shukufuku wo! Movie: Kurenai Densetsu</a></li>
+              <li class="ani-list"><a>Kono Subarashii Sekai ni Shukufuku wo! OVA</a></li>
+              <li class="ani-list"><a>Kono Subarashii Sekai ni Shukufuku wo! 2</a></li>
+              <li class="ani-list"><a>Kono Subarashii Sekai ni Shukufuku wo! 2 OVA</a></li>
+              <li class="ani-list"><a>Kono Subarashii Sekai ni Shukufuku wo! 3</a></li>
+              <li class="ani-list"><a>Kono Yo no Hate de Koi wo Utau Shoujo YU-NO</a></li>
+              <li class="ani-list"><a>Koroshi Ai</a></li>
+              <li class="ani-list"><a>Kotonoha no Niwa</a></li>
+              <li class="ani-list"><a>Kotoura-san</a></li>
+              <li class="ani-list"><a>Koyomimonogatari</a></li>
+              <li class="ani-list"><a>Kubikiri Cycle: Aoiro Savant to Zaregototsukai</a></li>
+              <li class="ani-list"><a>Kubo-san wa Mob wo Yurusanai</a></li>
+              <li class="ani-list"><a>Kujira no Kora wa Sajou ni Utau</a></li>
+              <li class="ani-list"><a>Kuma Kuma Kuma Bear</a></li>
+              <li class="ani-list"><a>Kumichou Musume to Sewagakari</a></li>
+              <li class="ani-list"><a>Kuro no Shoukanshi</a></li>
+              <li class="ani-list"><a>Kuzu no Honkai</a></li>
+              <li class="ani-list"><a>Kyokou Suiri</a></li>
+              <li class="ani-list"><a>Kyokou Suiri Season 2</a></li>
+              <li class="ani-list"><a>Kyoukai no Kanata</a></li>
+              <li class="ani-list"><a>Kyoukai no Kanata Movie 1: I'll Be Here - Kako-hen</a></li>
+              <li class="ani-list"><a>Kyoukai no Kanata Movie 2: I'll Be Here - Mirai-hen</a></li>
+              <li class="ani-list"><a>Kyoukai no Kanata: Shinonome</a></li>
+              <li class="ani-list"><a>Kyuuketsuki Sugu Shinu</a></li>
+              <li class="ani-list"><a>Kyuuketsuki Sugu Shinu 2</a></li>
+              <li class="ani-list"><a>Kyuukyoku Shinka shita Full Dive RPG ga Genjitsu yori mo Kusoge Dattara</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#L">
-              <h3><a class="group">L</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="L">
+            <h3><a class="group">L</a></h3>
+            <ul>
+              <li class="ani-list"><a>Leadale no Daichi nite</a></li>
+              <li class="ani-list"><a>Log Horizon</a></li>
+              <li class="ani-list"><a>Log Horizon 2nd Season</a></li>
+              <li class="ani-list"><a>Log Horizon: Entaku Houkai</a></li>
+              <li class="ani-list"><a>Lord El-Melloi II Sei no Jikenbo: Rail Zeppelin Grace Note</a></li>
+              <li class="ani-list"><a>Lord El-Melloi II Sei no Jikenbo: Rail Zeppelin Grace Note - Hakamori to Neko to
+                  Majutsushi</a></li>
+              <li class="ani-list"><a>Lord El-Melloi II Sei no Jikenbo: Rail Zeppelin Grace Note Special</a></li>
+              <li class="ani-list"><a>Lord of Vermilion: Guren no Ou</a></li>
+              <li class="ani-list"><a>Lycoris Recoil</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#M">
-              <h3><a class="group">M</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="M">
+            <h3><a class="group">M</a></h3>
+            <ul>
+              <li class="ani-list"><a>M3: Sono Kuroki Hagane</a></li>
+              <li class="ani-list"><a>Machikado Mazoku</a></li>
+              <li class="ani-list"><a>Machikado Mazoku: 2-choume</a></li>
+              <li class="ani-list"><a>Machine-Doll wa Kizutsukanai</a></li>
+              <li class="ani-list"><a>Machine-Doll wa Kizutsukanai Specials</a></li>
+              <li class="ani-list"><a>Madan no Ou to Vanadis</a></li>
+              <li class="ani-list"><a>Made in Abyss</a></li>
+              <li class="ani-list"><a>Made in Abyss Movie 3: Fukaki Tamashii no Reimei</a></li>
+              <li class="ani-list"><a>Made in Abyss: Retsujitsu no Ougonkyou</a></li>
+              <li class="ani-list"><a>Magi: Sinbad no Bouken</a></li>
+              <li class="ani-list"><a>Magi: Sinbad no Bouken (TV)</a></li>
+              <li class="ani-list"><a>Magi: The Labyrinth of Magic</a></li>
+              <li class="ani-list"><a>Magi: The Kingdom of Magic</a></li>
+              <li class="ani-list"><a>Magia Record: Mahou Shoujo Madoka☆Magica Gaiden</a></li>
+              <li class="ani-list"><a>Magia Record: Mahou Shoujo Madoka☆Magica Gaiden 2nd Season - Kakusei Zenya</a>
+              </li>
+              <li class="ani-list"><a>Magia Record: Mahou Shoujo Madoka☆Magica Gaiden Final Season - Asaki Yume no
+                  Akatsuki</a></li>
+              <li class="ani-list"><a>Mahou Shoujo Madoka★Magica</a></li>
+              <li class="ani-list"><a>Mahou Shoujo Madoka★Magica Movie 3: Hangyaku no Monogatari</a></li>
+              <li class="ani-list"><a>Mahou Shoujo Madoka★Magica Movie 4: Walpurgis no Kaiten</a></li>
+              <li class="ani-list"><a>Mahou Shoujo Site</a></li>
+              <li class="ani-list"><a>Mahou Shoujo Tokushusen Asuka</a></li>
+              <li class="ani-list"><a>Mahoutsukai no Yome</a></li>
+              <li class="ani-list"><a>Mahoutsukai no Yome Season 2</a></li>
+              <li class="ani-list"><a>Mahoutsukai no Yome: Hoshi Matsu Hito</a></li>
+              <li class="ani-list"><a>Mahoutsukai no Yome: Nishi no Shounen to Seiran no Kishi</a></li>
+              <li class="ani-list"><a>Mahoutsukai no Yoru</a></li>
+              <li class="ani-list"><a>Mahoutsukai Reimeiki</a></li>
+              <li class="ani-list"><a>Majo no Tabitabi</a></li>
+              <li class="ani-list"><a>Mamahaha no Tsurego ga Motokano datta</a></li>
+              <li class="ani-list"><a>Mangaka-san to Assistant-san to The Animation</a></li>
+              <li class="ani-list"><a>Mangaka-san to Assistant-san to The Animation Specials</a></li>
+              <li class="ani-list"><a>Maou-sama, Retry!</a></li>
+              <li class="ani-list"><a>Maou-jou de Oyasumi</a></li>
+              <li class="ani-list"><a>Maoyuu Maou Yuusha</a></li>
+              <li class="ani-list"><a>Mardock Scramble: The First Compression</a></li>
+              <li class="ani-list"><a>Mardock Scramble: The Second Combustion</a></li>
+              <li class="ani-list"><a>Mardock Scramble: The Third Exhaust</a></li>
+              <li class="ani-list"><a>Mars Red</a></li>
+              <li class="ani-list"><a>Mashiro no Oto</a></li>
+              <li class="ani-list"><a>Mashle</a></li>
+              <li class="ani-list"><a>Mato Seihei no Slave</a></li>
+              <li class="ani-list"><a>Mayo Chiki!</a></li>
+              <li class="ani-list"><a>Medaka Box</a></li>
+              <li class="ani-list"><a>Medaka Box Abnormal</a></li>
+              <li class="ani-list"><a>Megami-ryou no Ryoubo-kun.</a></li>
+              <li class="ani-list"><a>Meikyuu Black Company</a></li>
+              <li class="ani-list"><a>Mekakucity Actors</a></li>
+              <li class="ani-list"><a>Mieruko-chan</a></li>
+              <li class="ani-list"><a>Mikagura Gakuen Kumikyoku</a></li>
+              <li class="ani-list"><a>Mikakunin de Shinkoukei</a></li>
+              <li class="ani-list"><a>Mikakunin de Shinkoukei: Kamoniku tte Midori-ppoi Aji ga Suru no ne.</a></li>
+              <li class="ani-list"><a>Mikakunin de Shinkoukei: Mite. Are ga Watashitachi no Tomatteiru Ryokan yo.</a>
+              </li>
+              <li class="ani-list"><a>Mirai Nikki</a></li>
+              <li class="ani-list"><a>Mirai Nikki OVA</a></li>
+              <li class="ani-list"><a>Mirai Nikki: Redial</a></li>
+              <li class="ani-list"><a>Miru Tights</a></li>
+              <li class="ani-list"><a>Miru Tights: Cosplay Satsuei Tights</a></li>
+              <li class="ani-list"><a>Mitsuboshi Colors</a></li>
+              <li class="ani-list"><a>Mob Psycho 100</a></li>
+              <li class="ani-list"><a>Mob Psycho 100: Dai Ikkai Rei toka Soudansho Ian Ryokou - Kokoro Mitasu Iyashi no
+                  Tabi</a></li>
+              <li class="ani-list"><a>Mob Psycho 100 II</a></li>
+              <li class="ani-list"><a>Mob Psycho 100 III</a></li>
+              <li class="ani-list"><a>Mobile Suit Gundam: The Witch from Mercury</a></li>
+              <li class="ani-list"><a>Mondaiji-tachi ga Isekai kara Kuru Sou desu yo?</a></li>
+              <li class="ani-list"><a>Mondaiji-tachi ga Isekai kara Kuru Sou desu yo?: Onsen Manyuuki</a></li>
+              <li class="ani-list"><a>Monogatari Series: Second Season</a></li>
+              <li class="ani-list"><a>Monster Musume no Iru Nichijou</a></li>
+              <li class="ani-list"><a>Monster Musume no Iru Nichijou OVA</a></li>
+              <li class="ani-list"><a>Monster Musume no Oishasan</a></li>
+              <li class="ani-list"><a>Mugen no Juunin: Immortal</a></li>
+              <li class="ani-list"><a>Muhyo to Rouji no Mahouritsu Soudan Jimusho</a></li>
+              <li class="ani-list"><a>Muhyo to Rouji no Mahouritsu Soudan Jimusho 2nd Season</a></li>
+              <li class="ani-list"><a>Munou na Nana</a></li>
+              <li class="ani-list"><a>Murenase! Seton Gakuen</a></li>
+              <li class="ani-list"><a>Murenase! Seton Gakuen Special</a></li>
+              <li class="ani-list"><a>Musaigen no Phantom World</a></li>
+              <li class="ani-list"><a>Musaigen no Phantom World: Mizutama no Kiseki</a></li>
+              <li class="ani-list"><a>Mushikago no Cagaster</a></li>
+              <li class="ani-list"><a>Mushishi</a></li>
+              <li class="ani-list"><a>Mushishi: Hihamukage</a></li>
+              <li class="ani-list"><a>Mushishi Zoku Shou</a></li>
+              <li class="ani-list"><a>Mushishi Zoku Shou: Odoro no Michi</a></li>
+              <li class="ani-list"><a>Mushishi Zoku Shou 2nd Season</a></li>
+              <li class="ani-list"><a>Mushishi Zoku Shou: Suzu no Shizuku</a></li>
+              <li class="ani-list"><a>Mushoku Tensei: Isekai Ittara Honki Dasu</a></li>
+              <li class="ani-list"><a>Mushoku Tensei: Isekai Ittara Honki Dasu Part 2</a></li>
+              <li class="ani-list"><a>Mushoku Tensei: Isekai Ittara Honki Dasu - Eris no Goblin Toubatsu</a></li>
+              <li class="ani-list"><a>Mushoku Tensei II: Isekai Ittara Honki Dasu</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#N">
-              <h3><a class="group">N</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="N">
+            <h3><a class="group">N</a></h3>
+            <ul>
+              <li class="ani-list"><a>Nagato Yuki-chan no Shoushitsu</a></li>
+              <li class="ani-list"><a>Nagato Yuki-chan no Shoushitsu: Owarenai Natsuyasumi</a></li>
+              <li class="ani-list"><a>Nagi no Asu kara</a></li>
+              <li class="ani-list"><a>Nakanohito Genome [Jikkyouchuu]</a></li>
+              <li class="ani-list"><a>Nakanohito Genome [Jikkyouchuu]: Knots of Memories</a></li>
+              <li class="ani-list"><a>Nakitai Watashi wa Neko wo Kaburu</a></li>
+              <li class="ani-list"><a>Nana Maru San Batsu</a></li>
+              <li class="ani-list"><a>Nanatsu no Maken ga Shihai suru</a></li>
+              <li class="ani-list"><a>Nanbaka</a></li>
+              <li class="ani-list"><a>Nanbaka: Shusseki Bangou no Tsuita Baka-tachi!</a></li>
+              <li class="ani-list"><a>Nanbaka 2</a></li>
+              <li class="ani-list"><a>Nande Koko ni Sensei ga!?</a></li>
+              <li class="ani-list"><a>Nande Koko ni Sensei ga!? Nande Koko ni Sensei-tachi ga!?</a></li>
+              <li class="ani-list"><a>Naruto</a></li>
+              <li class="ani-list"><a>Naruto Shippuden</a></li>
+              <li class="ani-list"><a>Natsu e no Tunnel, Sayonara no Deguchi</a></li>
+              <li class="ani-list"><a>Natsu no Arashi!</a></li>
+              <li class="ani-list"><a>Nazo no Kanojo X</a></li>
+              <li class="ani-list"><a>Nazo no Kanojo X: Nazo no Natsu Matsuri</a></li>
+              <li class="ani-list"><a>Nekomonogatari: Kuro</a></li>
+              <li class="ani-list"><a>Neon Genesis Evangelion</a></li>
+              <li class="ani-list"><a>Neon Genesis Evangelion: The End of Evangelion</a></li>
+              <li class="ani-list"><a>Net-juu no Susume</a></li>
+              <li class="ani-list"><a>Net-juu no Susume Specials</a></li>
+              <li class="ani-list"><a>Netoge no Yome wa Onnanoko ja Nai to Omotta?</a></li>
+              <li class="ani-list"><a>Netsuzou TRap</a></li>
+              <li class="ani-list"><a>New Game!</a></li>
+              <li class="ani-list"><a>New Game! OVA</a></li>
+              <li class="ani-list"><a>New Game!!</a></li>
+              <li class="ani-list"><a>NHK ni Youkoso!</a></li>
+              <li class="ani-list"><a>Nichijou</a></li>
+              <li class="ani-list"><a>Nichijou: Nichijou no 0-wa</a></li>
+              <li class="ani-list"><a>NieR:Automata Ver1.1a</a></li>
+              <li class="ani-list"><a>Night Head 2041</a></li>
+              <li class="ani-list"><a>Ningen Fushin no Boukensha-tachi ga Sekai wo Sukuu you desu</a></li>
+              <li class="ani-list"><a>Nisekoi</a></li>
+              <li class="ani-list"><a>Nisekoi OVA</a></li>
+              <li class="ani-list"><a>Nisekoi:</a></li>
+              <li class="ani-list"><a>Nisekoi: OVA</a></li>
+              <li class="ani-list"><a>Nisemonogatari</a></li>
+              <li class="ani-list"><a>No Game No Life</a></li>
+              <li class="ani-list"><a>No Game No Life Specials</a></li>
+              <li class="ani-list"><a>No Game No Life: Zero</a></li>
+              <li class="ani-list"><a>No Guns Life</a></li>
+              <li class="ani-list"><a>No Guns Life 2nd Season</a></li>
+              <li class="ani-list"><a>No.6</a></li>
+              <li class="ani-list"><a>Non Non Biyori</a></li>
+              <li class="ani-list"><a>Non Non Biyori: Okinawa e Ikukoto ni Natta</a></li>
+              <li class="ani-list"><a>Non Non Biyori Repeat</a></li>
+              <li class="ani-list"><a>Non Non Biyori Repeat: Hotaru ga Tanoshinda</a></li>
+              <li class="ani-list"><a>Non Non Biyori Movie: Vacation</a></li>
+              <li class="ani-list"><a>Non Non Biyori Nonstop</a></li>
+              <li class="ani-list"><a>Non Non Biyori Nonstop: Bukatsu wo Ganbatta</a></li>
+              <li class="ani-list"><a>Noragami</a></li>
+              <li class="ani-list"><a>Noragami OVA</a></li>
+              <li class="ani-list"><a>Noragami Aragoto</a></li>
+              <li class="ani-list"><a>Noragami Aragoto OVA</a></li>
+              <li class="ani-list"><a>Nourin</a></li>
+              <li class="ani-list"><a>Nozo x Kimi</a></li>
+              <li class="ani-list"><a>Nozoki Ana</a></li>
+              <li class="ani-list"><a>Nozomanu Fushi no Boukensha</a></li>
+              <li class="ani-list"><a>Nyan Koi!</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#O">
-              <h3><a class="group">O</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="O">
+            <h3><a class="group">O</a></h3>
+            <ul>
+              <li class="ani-list"><a>Occultic;Nine</a></li>
+              <li class="ani-list"><a>One Outs</a></li>
+              <li class="ani-list"><a>One Piece</a></li>
+              <li class="ani-list"><a>One Piece 3D2Y: Ace no shi wo Koete! Luffy Nakama Tono Chikai</a></li>
+              <li class="ani-list"><a>One Piece Film: Gold</a></li>
+              <li class="ani-list"><a>One Piece Film: Red</a></li>
+              <li class="ani-list"><a>One Piece Film: Strong World</a></li>
+              <li class="ani-list"><a>One Piece Film: Z</a></li>
+              <li class="ani-list"><a>One Piece Movie 14: Stampede</a></li>
+              <li class="ani-list"><a>One Punch Man</a></li>
+              <li class="ani-list"><a>One Punch Man Specials</a></li>
+              <li class="ani-list"><a>One Punch Man: Road to Hero</a></li>
+              <li class="ani-list"><a>One Punch Man 2nd Season</a></li>
+              <li class="ani-list"><a>One Punch Man 2nd Season Specials</a></li>
+              <li class="ani-list"><a>One Punch Man 3</a></li>
+              <li class="ani-list"><a>Oniichan dakedo Ai sae Areba Kankeinai yo ne!</a></li>
+              <li class="ani-list"><a>Ore Monogatari!!</a></li>
+              <li class="ani-list"><a>Ore no Imouto ga Konnani Kawaii Wake ga Nai</a></li>
+              <li class="ani-list"><a>Ore no Imouto ga Konnani Kawaii Wake ga Nai Specials</a></li>
+              <li class="ani-list"><a>Ore no Imouto ga Konnani Kawaii Wake ga Nai.</a></li>
+              <li class="ani-list"><a>Ore no Imouto ga Konnani Kawaii Wake ga Nai. Specials</a></li>
+              <li class="ani-list"><a>Ore no Kanojo to Osananajimi ga Shuraba Sugiru</a></li>
+              <li class="ani-list"><a>Ore no Nounai Sentakushi ga, Gakuen Love Comedy wo Zenryoku de Jama Shiteiru</a>
+              </li>
+              <li class="ani-list"><a>Ore no Nounai Sentakushi ga, Gakuen Love Comedy wo Zenryoku de Jama Shiteiru
+                  OVA</a></li>
+              <li class="ani-list"><a>Ore wo Suki nano wa Omae dake ka yo</a></li>
+              <li class="ani-list"><a>Ore wo Suki nano wa Omae dake ka yo: Oretachi no Game Set</a></li>
+              <li class="ani-list"><a>Orient</a></li>
+              <li class="ani-list"><a>Orient: Awajishima Gekitou-hen</a></li>
+              <li class="ani-list"><a>Osake wa Fuufu ni Natte kara</a></li>
+              <li class="ani-list"><a>Osananajimi ga Zettai ni Makenai Love Comedy</a></li>
+              <li class="ani-list"><a>Oshiete! Galko-chan</a></li>
+              <li class="ani-list"><a>Oshiete! Galko-chan: Natsuyasumi tte Hontou desu ka?</a></li>
+              <li class="ani-list"><a>Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...</a>
+              </li>
+              <li class="ani-list"><a>Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...
+                  OVA</a></li>
+              <li class="ani-list"><a>Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...
+                  X</a></li>
+              <li class="ani-list"><a>Otome Game Sekai wa Mob ni Kibishii Sekai desu</a></li>
+              <li class="ani-list"><a>Otome Game Sekai wa Mob ni Kibishii Sekai desu 2nd Season</a></li>
+              <li class="ani-list"><a>Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken</a></li>
+              <li class="ani-list"><a>Ousama Game The Animation</a></li>
+              <li class="ani-list"><a>Ousama Ranking</a></li>
+              <li class="ani-list"><a>Overlord</a></li>
+              <li class="ani-list"><a>Overlord II</a></li>
+              <li class="ani-list"><a>Overlord III</a></li>
+              <li class="ani-list"><a>Overlord IV</a></li>
+              <li class="ani-list"><a>Overlord Movie 3: Sei Oukoku-hen</a></li>
+              <li class="ani-list"><a>Owari no Seraph</a></li>
+              <li class="ani-list"><a>Owari no Seraph: Kyuuketsuki Shahar</a></li>
+              <li class="ani-list"><a>Owari no Seraph: Nagoya Kessen-hen</a></li>
+              <li class="ani-list"><a>Owaranai Seraph: Nagoya-hen</a></li>
+              <li class="ani-list"><a>Owarimonogatari</a></li>
+              <li class="ani-list"><a>Owarimonogatari 2nd Season</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#P">
-              <h3><a class="group">P</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="P">
+            <h3><a class="group">P</a></h3>
+            <ul>
+              <li class="ani-list"><a>Papa no Iukoto wo Kikinasai!</a></li>
+              <li class="ani-list"><a>Papa no Iukoto wo Kikinasai! Pokkapoka</a></li>
+              <li class="ani-list"><a>Papa no Iukoto wo Kikinasai! OVA</a></li>
+              <li class="ani-list"><a>Paripi Koumei</a></li>
+              <li class="ani-list"><a>Peach Boy Riverside</a></li>
+              <li class="ani-list"><a>Planetarian: Chiisana Hoshi no Yume</a></li>
+              <li class="ani-list"><a>Planetarian: Hoshi no Hito</a></li>
+              <li class="ani-list"><a>Planetarian: Snow Globe</a></li>
+              <li class="ani-list"><a>Plastic Memories</a></li>
+              <li class="ani-list"><a>Platinum End</a></li>
+              <li class="ani-list"><a>Poputepipikku</a></li>
+              <li class="ani-list"><a>Poputepipikku TV Special</a></li>
+              <li class="ani-list"><a>Poputepipikku 2nd Season</a></li>
+              <li class="ani-list"><a>Prima Doll</a></li>
+              <li class="ani-list"><a>Princess Connect! Re:Dive</a></li>
+              <li class="ani-list"><a>Princess Connect! Re:Dive Season 2</a></li>
+              <li class="ani-list"><a>Princess Principal</a></li>
+              <li class="ani-list"><a>Princess Principal: Crown Handler Movie 1</a></li>
+              <li class="ani-list"><a>Princess Principal: Crown Handler Movie 2</a></li>
+              <li class="ani-list"><a>Princess Principal: Crown Handler Movie 3</a></li>
+              <li class="ani-list"><a>Prison School</a></li>
+              <li class="ani-list"><a>Prison School: Mad Wax</a></li>
+              <li class="ani-list"><a>Psycho-Pass</a></li>
+              <li class="ani-list"><a>Psycho-Pass Movie</a></li>
+              <li class="ani-list"><a>Psycho-Pass Movie: Providence</a></li>
+              <li class="ani-list"><a>Psycho-Pass: Sinners of the System Case.1 - Tsumi to Batsu</a></li>
+              <li class="ani-list"><a>Psycho-Pass: Sinners of the System Case.2 - First Guardian</a></li>
+              <li class="ani-list"><a>Psycho-Pass: Sinners of the System Case.3 - Onshuu no Kanata ni</a></li>
+              <li class="ani-list"><a>Psycho-Pass 2</a></li>
+              <li class="ani-list"><a>Psycho-Pass 3</a></li>
+              <li class="ani-list"><a>Psycho-Pass 3: First Inspector</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#Q">
-              <h3><a class="group">Q</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="Q">
+            <h3><a class="group">Q</a></h3>
+            <ul>
+              <li class="ani-list"><a>Qualidea Code</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#R">
-              <h3><a class="group">R</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="R">
+            <h3><a class="group">R</a></h3>
+            <ul>
+              <li class="ani-list"><a>Ragna Crimson</a></li>
+              <li class="ani-list"><a>Rail Wars!</a></li>
+              <li class="ani-list"><a>Rakuen Tsuihou</a></li>
+              <li class="ani-list"><a>Ramen Daisuki Koizumi-san</a></li>
+              <li class="ani-list"><a>Ranpo Kitan: Game of Laplace</a></li>
+              <li class="ani-list"><a>Re:␣Hamatora</a></li>
+              <li class="ani-list"><a>Re:Creators</a></li>
+              <li class="ani-list"><a>Re:Zero kara Hajimeru Isekai Seikatsu</a></li>
+              <li class="ani-list"><a>Re:Zero kara Hajimeru Isekai Seikatsu - Hyouketsu no Kizuna</a></li>
+              <li class="ani-list"><a>Re:Zero kara Hajimeru Isekai Seikatsu - Memory Snow</a></li>
+              <li class="ani-list"><a>Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season</a></li>
+              <li class="ani-list"><a>Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2</a></li>
+              <li class="ani-list"><a>ReLIFE</a></li>
+              <li class="ani-list"><a>ReLIFE: Kanketsu-hen</a></li>
+              <li class="ani-list"><a>Renai Boukun</a></li>
+              <li class="ani-list"><a>RErideD: Tokigoe no Derrida</a></li>
+              <li class="ani-list"><a>Revisions</a></li>
+              <li class="ani-list"><a>Rikei ga Koi ni Ochita no de Shoumei shitemita.</a></li>
+              <li class="ani-list"><a>Rikei ga Koi ni Ochita no de Shoumei shitemita. Heart</a></li>
+              <li class="ani-list"><a>Rokka no Yuusha</a></li>
+              <li class="ani-list"><a>Rokudenashi Majutsu Koushi to Akashic Records</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#S">
-              <h3><a class="group">S</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-                <li class="ani-list"><a>Sangatsu no Lion</a></li>
-                <li class="ani-list"><a>Sangatsu no Lion 2nd Season</a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="S">
+            <h3><a class="group">S</a></h3>
+            <ul>
+              <li class="ani-list"><a>Sabikui Bisco</a></li>
+              <li class="ani-list"><a>Saenai Heroine no Sodatekata</a></li>
+              <li class="ani-list"><a>Saenai Heroine no Sodatekata Fine</a></li>
+              <li class="ani-list"><a>Saenai Heroine no Sodatekata: Ai to Seishun no Service-kai</a></li>
+              <li class="ani-list"><a>Saenai Heroine no Sodatekata ♭</a></li>
+              <li class="ani-list"><a>Saenai Heroine no Sodatekata ♭: Koi to Junjou no Service-kai</a></li>
+              <li class="ani-list"><a>Saihate no Paladin</a></li>
+              <li class="ani-list"><a>Saihate no Paladin 2nd Season</a></li>
+              <li class="ani-list"><a>Saijaku Muhai no Bahamut</a></li>
+              <li class="ani-list"><a>Saiki Kusuo no Ψ-nan</a></li>
+              <li class="ani-list"><a>Saiki Kusuo no Ψ-nan 2</a></li>
+              <li class="ani-list"><a>Saiki Kusuo no Ψ-nan: Kanketsu-hen</a></li>
+              <li class="ani-list"><a>Saiki Kusuo no Ψ-nan: Shidou-hen</a></li>
+              <li class="ani-list"><a>Saikin Yatotta Maid ga Ayashii</a></li>
+              <li class="ani-list"><a>Sakamoto desu ga?</a></li>
+              <li class="ani-list"><a>Sakamoto desu ga? Specials</a></li>
+              <li class="ani-list"><a>Sakasama no Patema</a></li>
+              <li class="ani-list"><a>Sakugan</a></li>
+              <li class="ani-list"><a>Sakura Quest</a></li>
+              <li class="ani-list"><a>Sakura-sou no Pet na Kanojo</a></li>
+              <li class="ani-list"><a>Samurai Champloo</a></li>
+              <li class="ani-list"><a>Sangatsu no Lion</a></li>
+              <li class="ani-list"><a>Sangatsu no Lion 2nd Season</a></li>
+              <li class="ani-list"><a>Sankarea</a></li>
+              <li class="ani-list"><a>Sankarea OVA</a></li>
+              <li class="ani-list"><a>Sankarea: Wagahai mo... Zombie de Aru...</a></li>
+              <li class="ani-list"><a>Sansha Sanyou</a></li>
+              <li class="ani-list"><a>Sansha Sanyou Specials</a></li>
+              <li class="ani-list"><a>Saredo Tsumibito wa Ryuu to Odoru</a></li>
+              <li class="ani-list"><a>Satsuriku no Tenshi</a></li>
+              <li class="ani-list"><a>Sayonara no Asa ni Yakusoku no Hana wo Kazarou</a></li>
+              <li class="ani-list"><a>Sayonara Zetsubou Sensei</a></li>
+              <li class="ani-list"><a>Sayonara Zetsubou Sensei Special</a></li>
+              <li class="ani-list"><a>Scarlet Nexus</a></li>
+              <li class="ani-list"><a>School Days</a></li>
+              <li class="ani-list"><a>School Days OVA</a></li>
+              <li class="ani-list"><a>Seikaisuru Kado</a></li>
+              <li class="ani-list"><a>Seiken Gakuin no Makentsukai</a></li>
+              <li class="ani-list"><a>Seikimatsu Occult Gakuin</a></li>
+              <li class="ani-list"><a>Seikimatsu Occult Gakuin Specials</a></li>
+              <li class="ani-list"><a>Seirei Gensouki</a></li>
+              <li class="ani-list"><a>Seirei Gensouki 2nd Season</a></li>
+              <li class="ani-list"><a>Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai</a></li>
+              <li class="ani-list"><a>Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai</a></li>
+              <li class="ani-list"><a>Seitokai no Ichizon</a></li>
+              <li class="ani-list"><a>Seitokai no Ichizon Lv.2</a></li>
+              <li class="ani-list"><a>Seitokai no Ichizon Lv.2: Watasu Seitokai</a></li>
+              <li class="ani-list"><a>Seitokai Yakuindomo</a></li>
+              <li class="ani-list"><a>Seitokai Yakuindomo OVA</a></li>
+              <li class="ani-list"><a>Seitokai Yakuindomo*</a></li>
+              <li class="ani-list"><a>Seitokai Yakuindomo* OVA</a></li>
+              <li class="ani-list"><a>Senjou no Valkyria</a></li>
+              <li class="ani-list"><a>Senjou no Valkyria 3: Tagatame no Juusou</a></li>
+              <li class="ani-list"><a>Sekai Seifuku: Bouryaku no Zvezda</a></li>
+              <li class="ani-list"><a>Sekai Seifuku: Bouryaku no Zvezda - Shin Zvezda Daisakusen</a></li>
+              <li class="ani-list"><a>Senkou no Night Raid</a></li>
+              <li class="ani-list"><a>Senpai ga Uzai Kouhai no Hanashi</a></li>
+              <li class="ani-list"><a>Senryuu Shoujo</a></li>
+              <li class="ani-list"><a>Sentai Daishikkaku</a></li>
+              <li class="ani-list"><a>Sentouin, Hakenshimasu!</a></li>
+              <li class="ani-list"><a>Senyuu.</a></li>
+              <li class="ani-list"><a>Senyuu. 2</a></li>
+              <li class="ani-list"><a>Seto no Hanayome</a></li>
+              <li class="ani-list"><a>Seto no Hanayome OVA</a></li>
+              <li class="ani-list"><a>Sewayaki Kitsune no Senko-san</a></li>
+              <li class="ani-list"><a>Shadows House</a></li>
+              <li class="ani-list"><a>Shadows House 2nd Season</a></li>
+              <li class="ani-list"><a>Shigatsu wa Kimi no Uso</a></li>
+              <li class="ani-list"><a>Shigatsu wa Kimi no Uso: Moments</a></li>
+              <li class="ani-list"><a>Shiki</a></li>
+              <li class="ani-list"><a>Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai</a></li>
+              <li class="ani-list"><a>Shinrei Tantei Yakumo</a></li>
+              <li class="ani-list"><a>Shinchou Yuusha: Kono Yuusha ga Ore Tueee Kuse ni Shinchou Sugiru</a></li>
+              <li class="ani-list"><a>Shingeki no Bahamut: Genesis</a></li>
+              <li class="ani-list"><a>Shingeki no Bahamut: Virgin Soul</a></li>
+              <li class="ani-list"><a>Shingeki no Kyojin</a></li>
+              <li class="ani-list"><a>Shingeki no Kyojin OVA</a></li>
+              <li class="ani-list"><a>Shingeki no Kyojin: Kuinaki Sentaku</a></li>
+              <li class="ani-list"><a>Shingeki no Kyojin: Lost Girls</a></li>
+              <li class="ani-list"><a>Shingeki no Kyojin Season 2</a></li>
+              <li class="ani-list"><a>Shingeki no Kyojin Season 3</a></li>
+              <li class="ani-list"><a>Shingeki no Kyojin Season 3 Part 2</a></li>
+              <li class="ani-list"><a>Shingeki no Kyojin: The Final Season</a></li>
+              <li class="ani-list"><a>Shingeki no Kyojin: The Final Season Part 2</a></li>
+              <li class="ani-list"><a>Shingeki no Kyojin: The Final Season - Kanketsu-hen</a></li>
+              <li class="ani-list"><a>Shinigami Bocchan to Kuro Maid</a></li>
+              <li class="ani-list"><a>Shinigami Bocchan to Kuro Maid 2nd Season</a></li>
+              <li class="ani-list"><a>Shinryaku! Ika Musume</a></li>
+              <li class="ani-list"><a>Shinryaku! Ika Musume Specials</a></li>
+              <li class="ani-list"><a>Shinryaku!! Ika Musume</a></li>
+              <li class="ani-list"><a>Shinryaku!? Ika Musume</a></li>
+              <li class="ani-list"><a>Shinsekai yori</a></li>
+              <li class="ani-list"><a>Shirobako</a></li>
+              <li class="ani-list"><a>Shirobako Movie</a></li>
+              <li class="ani-list"><a>Shiroi Suna no Aquatope</a></li>
+              <li class="ani-list"><a>Shisha no Teikoku</a></li>
+              <li class="ani-list"><a>Shokei Shoujo no Virgin Road</a></li>
+              <li class="ani-list"><a>Shomin Sample</a></li>
+              <li class="ani-list"><a>Shomin Sample Specials</a></li>
+              <li class="ani-list"><a>Shoujo Shuumatsu Ryokou</a></li>
+              <li class="ani-list"><a>Shoujo-tachi wa Kouya wo Mezasu</a></li>
+              <li class="ani-list"><a>Shoukoku no Altair</a></li>
+              <li class="ani-list"><a>Shuumatsu Nani Shitemasu ka? Isogashii desu ka? Sukutte Moratte Ii desu ka?</a>
+              </li>
+              <li class="ani-list"><a>Shuumatsu no Izetta</a></li>
+              <li class="ani-list"><a>Shy</a></li>
+              <li class="ani-list"><a>Silver Spoon</a></li>
+              <li class="ani-list"><a>Silver Spoon 2nd Season</a></li>
+              <li class="ani-list"><a>Sirius the Jaeger</a></li>
+              <li class="ani-list"><a>SK∞</a></li>
+              <li class="ani-list"><a>SK∞ OVA</a></li>
+              <li class="ani-list"><a>SK∞ 2nd Season</a></li>
+              <li class="ani-list"><a>SKET Dance</a></li>
+              <li class="ani-list"><a>SKET Dance OVA</a></li>
+              <li class="ani-list"><a>Slow Loop</a></li>
+              <li class="ani-list"><a>Solo Leveling</a></li>
+              <li class="ani-list"><a>Somali to Mori no Kamisama</a></li>
+              <li class="ani-list"><a>Sora no Aosa wo Shiru Hito yo</a></li>
+              <li class="ani-list"><a>Sora no Method</a></li>
+              <li class="ani-list"><a>Sora no Method: Aru Shoujo no Kyuujitsu★</a></li>
+              <li class="ani-list"><a>Sora no Method: Mou Hitotsu no Negai</a></li>
+              <li class="ani-list"><a>Sora no Otoshimono</a></li>
+              <li class="ani-list"><a>Sora no Otoshimono: Forte</a></li>
+              <li class="ani-list"><a>Sora no Otoshimono: Project Pink</a></li>
+              <li class="ani-list"><a>Sora no Otoshimono: Tokeijikake no Angeloid</a></li>
+              <li class="ani-list"><a>Sora no Otoshimono Final: Eternal My Master</a></li>
+              <li class="ani-list"><a>Sora no Woto</a></li>
+              <li class="ani-list"><a>Soredemo Ayumu wa Yosetekuru</a></li>
+              <li class="ani-list"><a>Soredemo Machi wa Mawatteiru</a></li>
+              <li class="ani-list"><a>Soredemo Sekai wa Utsukushii</a></li>
+              <li class="ani-list"><a>Sounan desu ka?</a></li>
+              <li class="ani-list"><a>Sousei no Onmyouji</a></li>
+              <li class="ani-list"><a>Spice and Wolf</a></li>
+              <li class="ani-list"><a>Spice and Wolf II</a></li>
+              <li class="ani-list"><a>Spice and Wolf II: The Wolf and the Amber Melancholy</a></li>
+              <li class="ani-list"><a>Spy Classroom</a></li>
+              <li class="ani-list"><a>Spy x Family</a></li>
+              <li class="ani-list"><a>Spy x Family Part 2</a></li>
+              <li class="ani-list"><a>SSSS.Dynazenon</a></li>
+              <li class="ani-list"><a>SSSS.Gridman</a></li>
+              <li class="ani-list"><a>Steins;Gate</a></li>
+              <li class="ani-list"><a>Steins;Gate Movie: Fuka Ryouiki no Déjà vu</a></li>
+              <li class="ani-list"><a>Steins;Gate: Kyoukaimenjou no Missing Link - Divide By Zero</a></li>
+              <li class="ani-list"><a>Steins;Gate: Soumei Eichi no Cognitive Computing</a></li>
+              <li class="ani-list"><a>Steins;Gate 0</a></li>
+              <li class="ani-list"><a>Steins;Gate 0: Kesshou Takei no Valentine - Bittersweet Intermedio</a></li>
+              <li class="ani-list"><a>Suki ni Naru Sono Shunkan wo. Kokuhaku Jikkou Iinkai</a></li>
+              <li class="ani-list"><a>Summer Ghost</a></li>
+              <li class="ani-list"><a>Summertime Render</a></li>
+              <li class="ani-list"><a>Sumomomo Momomo: Chijou Saikyou no Yome</a></li>
+              <li class="ani-list"><a>Sumomomo Momomo: Chijou Saikyou no Yome Specials</a></li>
+              <li class="ani-list"><a>Sunohara-sou no Kanrinin-san</a></li>
+              <li class="ani-list"><a>Super Danganronpa 2.5: Komaeda Nagito to Sekai no Hakaimono</a></li>
+              <li class="ani-list"><a>Suzume no Tojimari</a></li>
+              <li class="ani-list"><a>Sword of the Stranger</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#T">
-              <h3><a class="group">T</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="T">
+            <h3><a class="group">T</a></h3>
+            <ul>
+              <li class="ani-list"><a>Taboo Tattoo</a></li>
+              <li class="ani-list"><a>Tada-kun wa Koi wo Shinai</a></li>
+              <li class="ani-list"><a>Taishou Otome Otogibanashi</a></li>
+              <li class="ani-list"><a>Takt Op. Destiny</a></li>
+              <li class="ani-list"><a>Tales of Phantasia The Animation</a></li>
+              <li class="ani-list"><a>Tales of Symphonia The Animation: Sekai Tougou-hen</a></li>
+              <li class="ani-list"><a>Tales of Symphonia The Animation: Sylvarant-hen</a></li>
+              <li class="ani-list"><a>Tales of Symphonia The Animation: Tethe'alla-hen</a></li>
+              <li class="ani-list"><a>Tales of the Abyss</a></li>
+              <li class="ani-list"><a>Tales of Vesperia: The First Strike</a></li>
+              <li class="ani-list"><a>Tales of Zestiria: Doushi no Yoake</a></li>
+              <li class="ani-list"><a>Tales of Zestiria the Cross</a></li>
+              <li class="ani-list"><a>Tales of Zestiria the Cross: Saiyaku no Jidai</a></li>
+              <li class="ani-list"><a>Tales of Zestiria the Cross 2nd Season</a></li>
+              <li class="ani-list"><a>Tamako Love Story</a></li>
+              <li class="ani-list"><a>Tamako Market</a></li>
+              <li class="ani-list"><a>Tamako Market Specials</a></li>
+              <li class="ani-list"><a>Tanaka-kun wa Itsumo Kedaruge</a></li>
+              <li class="ani-list"><a>Tanaka-kun wa Itsumo Kedaruge Specials</a></li>
+              <li class="ani-list"><a>Tanaka-kun wa Kyou mo Kedaruge</a></li>
+              <li class="ani-list"><a>Tantei wa Mou, Shindeiru.</a></li>
+              <li class="ani-list"><a>Tantei wa Mou, Shindeiru. Season 2</a></li>
+              <li class="ani-list"><a>Tari Tari</a></li>
+              <li class="ani-list"><a>Tari Tari: Kumottari, Kagayaitari, Mata Itsuka Utattari</a></li>
+              <li class="ani-list"><a>Tasogare Otome x Amnesia</a></li>
+              <li class="ani-list"><a>Tasogare Otome x Amnesia: Taima Otome</a></li>
+              <li class="ani-list"><a>Tegamibachi</a></li>
+              <li class="ani-list"><a>Tegamibachi: Hikari to Ao no Gensou Yawa</a></li>
+              <li class="ani-list"><a>Tegamibachi Reverse</a></li>
+              <li class="ani-list"><a>Tejina-senpai</a></li>
+              <li class="ani-list"><a>Tengen Toppa Gurren Lagann</a></li>
+              <li class="ani-list"><a>Tengen Toppa Gurren Lagann Movie 1: Gurren-hen</a></li>
+              <li class="ani-list"><a>Tengen Toppa Gurren Lagann Movie 2: Lagann-hen</a></li>
+              <li class="ani-list"><a>Tengen Toppa Gurren Lagann Movie 2: Lagann-hen</a></li>
+              <li class="ani-list"><a>Tenki no Ko</a></li>
+              <li class="ani-list"><a>Tenkuu Shinpan</a></li>
+              <li class="ani-list"><a>Tensai Ouji no Akaji Kokka Saisei Jutsu</a></li>
+              <li class="ani-list"><a>Tensei Oujo to Tensai Reijou no Mahou Kakumei</a></li>
+              <li class="ani-list"><a>Tensei shitara Slime Datta Ken</a></li>
+              <li class="ani-list"><a>Tensei shitara Slime Datta Ken Movie: Guren no Kizuna-hen</a></li>
+              <li class="ani-list"><a>Tensei shitara Slime Datta Ken OVA</a></li>
+              <li class="ani-list"><a>Tensei shitara Slime Datta Ken 2nd Season</a></li>
+              <li class="ani-list"><a>Tensei shitara Slime Datta Ken 2nd Season Part 2</a></li>
+              <li class="ani-list"><a>Tensei shitara Slime Datta Ken 3rd Season</a></li>
+              <li class="ani-list"><a>Tensura Nikki: Tensei shitara Slime Datta Ken</a></li>
+              <li class="ani-list"><a>Texhnolyze</a></li>
+              <li class="ani-list"><a>The God of High School</a></li>
+              <li class="ani-list"><a>The Sacred Blacksmith</a></li>
+              <li class="ani-list"><a>Toaru Majutsu no Index</a></li>
+              <li class="ani-list"><a>Toaru Majutsu no Index II</a></li>
+              <li class="ani-list"><a>Toaru Majutsu no Index Movie: Endymion no Kiseki</a></li>
+              <li class="ani-list"><a>Toaru Majutsu no Index III</a></li>
+              <li class="ani-list"><a>Toaru Kagaku no Railgun</a></li>
+              <li class="ani-list"><a>Toaru Kagaku no Railgun: Motto Marutto Railgun</a></li>
+              <li class="ani-list"><a>Toaru Kagaku no Railgun: Misaka-san wa Ima Chuumoku no Mato desu kara</a></li>
+              <li class="ani-list"><a>Toaru Kagaku no Railgun: Entenka no Satsuei Model mo Raku Ja Arimasen wa ne.</a>
+              </li>
+              <li class="ani-list"><a>Toaru Kagaku no Railgun S</a></li>
+              <li class="ani-list"><a>Toaru Kagaku no Railgun S: Daiji na Koto wa Zenbu Sentou ni Osowatta</a></li>
+              <li class="ani-list"><a>Toaru Kagaku no Railgun S: Motto Marutto Railgun</a></li>
+              <li class="ani-list"><a>Toaru Kagaku no Railgun T</a></li>
+              <li class="ani-list"><a>Toaru Kagaku no Railgun T: Motto Marutto Railgun</a></li>
+              <li class="ani-list"><a>Toaru Kagaku no Accelerator</a></li>
+              <li class="ani-list"><a>Toaru Kagaku no Accelerator: Tobidase Ippou-san - Hachamecha Kaishingeki</a></li>
+              <li class="ani-list"><a>Tokyo Ghoul</a></li>
+              <li class="ani-list"><a>Tokyo Ghoul: "Jack"</a></li>
+              <li class="ani-list"><a>Tokyo Ghoul: "Pinto"</a></li>
+              <li class="ani-list"><a>Tokyo Ghoul √A</a></li>
+              <li class="ani-list"><a>Tokyo Ghoul:re</a></li>
+              <li class="ani-list"><a>Tokyo Ghoul:re 2nd Season</a></li>
+              <li class="ani-list"><a>Tokyo Ravens</a></li>
+              <li class="ani-list"><a>Tomo-chan wa Onnanoko!</a></li>
+              <li class="ani-list"><a>Tomodachi Game</a></li>
+              <li class="ani-list"><a>Tonikaku Kawaii</a></li>
+              <li class="ani-list"><a>Tonikaku Kawaii: SNS</a></li>
+              <li class="ani-list"><a>Tonikaku Kawaii: Seifuku</a></li>
+              <li class="ani-list"><a>Tonikaku Kawaii 2nd Season</a></li>
+              <li class="ani-list"><a>Toradora!</a></li>
+              <li class="ani-list"><a>Toradora!: Bentou no Gokui</a></li>
+              <li class="ani-list"><a>Toradora!: SOS! Kuishinbou Banbanzai</a></li>
+              <li class="ani-list"><a>Triage X</a></li>
+              <li class="ani-list"><a>Triage X: Recollection XOXO</a></li>
+              <li class="ani-list"><a>Tribe Nine</a></li>
+              <li class="ani-list"><a>Trickster: Edogawa Ranpo "Shounen Tanteidan" yori</a></li>
+              <li class="ani-list"><a>Trickster: Edogawa Ranpo "Shounen Tanteidan" yori OVA</a></li>
+              <li class="ani-list"><a>Trigun</a></li>
+              <li class="ani-list"><a>Trigun Stampede</a></li>
+              <li class="ani-list"><a>Trigun: Badlands Rumble</a></li>
+              <li class="ani-list"><a>Tsugu Tsugumomo</a></li>
+              <li class="ani-list"><a>Tsugumomo</a></li>
+              <li class="ani-list"><a>Tsugumomo OVA</a></li>
+              <li class="ani-list"><a>Tsuki ga Michibiku Isekai Douchuu</a></li>
+              <li class="ani-list"><a>Tsuki ga Michibiku Isekai Douchuu 2nd Season</a></li>
+              <li class="ani-list"><a>Tsuki to Laika to Nosferatu</a></li>
+              <li class="ani-list"><a>Tsukimonogatari</a></li>
+              <li class="ani-list"><a>Tsundere Akuyaku Reijou Liselotte to Jikkyou no Endou-kun to Kaisetsu no
+                  Kobayashi-san</a></li>
+              <li class="ani-list"><a>Tsurezure Children</a></li>
+              <li class="ani-list"><a>Tsuyokute New Saga</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#U">
-              <h3><a class="group">U</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="U">
+            <h3><a class="group">U</a></h3>
+            <ul>
+              <li class="ani-list"><a>Uchi no Maid ga Uzasugiru!</a></li>
+              <li class="ani-list"><a>Uchi no Maid ga Uzasugiru! OVA</a></li>
+              <li class="ani-list"><a>Uchiage Hanabi, Shita kara Miru ka? Yoko kara Miru ka?</a></li>
+              <li class="ani-list"><a>Udon no Kuni no Kiniro Kemari</a></li>
+              <li class="ani-list"><a>Ueno-san wa Bukiyou</a></li>
+              <li class="ani-list"><a>Ulysses: Jehanne Darc to Renkin no Kishi</a></li>
+              <li class="ani-list"><a>Uma Musume: Pretty Derby</a></li>
+              <li class="ani-list"><a>Uma Musume: Pretty Derby - BNW no Chikai</a></li>
+              <li class="ani-list"><a>Uma Musume: Pretty Derby Season 2</a></li>
+              <li class="ani-list"><a>Unnamed Memory</a></li>
+              <li class="ani-list"><a>Uramichi Oniisan</a></li>
+              <li class="ani-list"><a>Usagi Drop</a></li>
+              <li class="ani-list"><a>Uzaki-chan wa Asobitai!</a></li>
+              <li class="ani-list"><a>Uzaki-chan wa Asobitai! Double</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#V">
-              <h3><a class="group">V</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="V">
+            <h3><a class="group">V</a></h3>
+            <ul>
+              <li class="ani-list"><a>Vampire in the Garden</a></li>
+              <li class="ani-list"><a>Vanitas no Carte</a></li>
+              <li class="ani-list"><a>Vanitas no Carte Part 2</a></li>
+              <li class="ani-list"><a>Vinland Saga</a></li>
+              <li class="ani-list"><a>Vinland Saga Season 2</a></li>
+              <li class="ani-list"><a>Violet Evergarden</a></li>
+              <li class="ani-list"><a>Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou</a></li>
+              <li class="ani-list"><a>Violet Evergarden Movie</a></li>
+              <li class="ani-list"><a>Vivy: Fluorite Eye's Song</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#W">
-              <h3><a class="group">W</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="W">
+            <h3><a class="group">W</a></h3>
+            <ul>
+              <li class="ani-list"><a>Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!</a></li>
+              <li class="ani-list"><a>Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!: Motenaishi, Nazomeite
+                  Miru</a></li>
+              <li class="ani-list"><a>Watashi ni Tenshi ga Maiorita!</a></li>
+              <li class="ani-list"><a>Watashi ni Tenshi ga Maiorita! Precious Friends</a></li>
+              <li class="ani-list"><a>Watashi ni Tenshi ga Maiorita! Special</a></li>
+              <li class="ani-list"><a>Watashi no Oshi wa Akuyaku Reijou.</a></li>
+              <li class="ani-list"><a>White Album</a></li>
+              <li class="ani-list"><a>White Album 2</a></li>
+              <li class="ani-list"><a>White Album 2nd Season</a></li>
+              <li class="ani-list"><a>Witch Craft Works</a></li>
+              <li class="ani-list"><a>Witch Craft Works: Takamiya-kun to Imouto no Warudakumi</a></li>
+              <li class="ani-list"><a>Wonder Egg Priority</a></li>
+              <li class="ani-list"><a>Wonder Egg Priority: Watashi no Priority</a></li>
+              <li class="ani-list"><a>Working!!</a></li>
+              <li class="ani-list"><a>Working'!!</a></li>
+              <li class="ani-list"><a>Working!!!</a></li>
+              <li class="ani-list"><a>World Trigger</a></li>
+              <li class="ani-list"><a>World Trigger 2nd Season</a></li>
+              <li class="ani-list"><a>World Trigger 3rd Season</a></li>
+              <li class="ani-list"><a>Wotaku ni Koi wa Muzukashii</a></li>
+              <li class="ani-list"><a>Wotaku ni Koi wa Muzukashii OVA</a></li>
+              <li class="ani-list"><a>WWW.Working!!</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#X">
-              <h3><a class="group">X</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="X">
+            <h3><a class="group">X</a></h3>
+            <ul>
+              <li class="ani-list"><a>-</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#Y">
-              <h3><a class="group">Y</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="Y">
+            <h3><a class="group">Y</a></h3>
+            <ul>
+              <li class="ani-list"><a>Yagate Kimi ni Naru</a></li>
+              <li class="ani-list"><a>Yahari Ore no Seishun Love Comedy wa Machigatteiru.</a></li>
+              <li class="ani-list"><a>Yahari Ore no Seishun Love Comedy wa Machigatteiru. OVA</a></li>
+              <li class="ani-list"><a>Yahari Ore no Seishun Love Comedy wa Machigatteiru. Zoku</a></li>
+              <li class="ani-list"><a>Yahari Ore no Seishun Love Comedy wa Machigatteiru. Zoku OVA</a></li>
+              <li class="ani-list"><a>Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan</a></li>
+              <li class="ani-list"><a>Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan OVA</a></li>
+              <li class="ani-list"><a>Yakusoku no Neverland</a></li>
+              <li class="ani-list"><a>Yamada-kun to 7-nin no Majo</a></li>
+              <li class="ani-list"><a>Yamada-kun to 7-nin no Majo: Mou Hitotsu no Suzaku-sai</a></li>
+              <li class="ani-list"><a>Yankee-kun na Yamada-kun to Megane-chan to Majo</a></li>
+              <li class="ani-list"><a>Yesterday wo Utatte</a></li>
+              <li class="ani-list"><a>Yesterday wo Utatte: Haishin-ban Episode</a></li>
+              <li class="ani-list"><a>Yofukashi no Uta</a></li>
+              <li class="ani-list"><a>Yondemasu yo, Azazel-san.</a></li>
+              <li class="ani-list"><a>Yondemasu yo, Azazel-san. OVA</a></li>
+              <li class="ani-list"><a>Yondemasu yo, Azazel-san. Z</a></li>
+              <li class="ani-list"><a>Yosuga no Sora</a></li>
+              <li class="ani-list"><a>Youjo Senki</a></li>
+              <li class="ani-list"><a>Youjo Senki Movie</a></li>
+              <li class="ani-list"><a>Youjo Senki: Sabaku no Pasta Daisakusen</a></li>
+              <li class="ani-list"><a>Youjo Senki II</a></li>
+              <li class="ani-list"><a>Youkai Apartment no Yuuga na Nichijou</a></li>
+              <li class="ani-list"><a>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e</a></li>
+              <li class="ani-list"><a>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2nd Season</a></li>
+              <li class="ani-list"><a>Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season</a></li>
+              <li class="ani-list"><a>Yuragi-sou no Yuuna-san</a></li>
+              <li class="ani-list"><a>Yuragi-sou no Yuuna-san OVA</a></li>
+              <li class="ani-list"><a>Yuru Camp△</a></li>
+              <li class="ani-list"><a>Yuru Camp△ Movie</a></li>
+              <li class="ani-list"><a>Yuru Camp△ Specials</a></li>
+              <li class="ani-list"><a>Yuru Camp△ Season 2</a></li>
+              <li class="ani-list"><a>Yuru Camp△ Season 2 Specials</a></li>
+              <li class="ani-list"><a>Yuru Camp△ Season 3</a></li>
+              <li class="ani-list"><a>Yuru Yuri</a></li>
+              <li class="ani-list"><a>Yuru Yuri: Doushite, Tomaranai, Tokimeki, Dokidoki, Paradox, Eternal</a></li>
+              <li class="ani-list"><a>Yuru Yuri♪♪</a></li>
+              <li class="ani-list"><a>Yuru Yuri Nachuyachumi!</a></li>
+              <li class="ani-list"><a>Yuuki Yuuna wa Yuusha de Aru</a></li>
+              <li class="ani-list"><a>Yuuki Yuuna wa Yuusha de Aru: Washio Sumi no Shou</a></li>
+              <li class="ani-list"><a>Yuuki Yuuna wa Yuusha de Aru: Yuusha no Shou</a></li>
+              <li class="ani-list"><a>Yuuki Yuuna wa Yuusha de Aru: Dai Mankai no Shou</a></li>
+              <li class="ani-list"><a>Yuuki Yuuna wa Yuusha de Aru: Washio Sumi no Shou 1 - Tomodachi</a></li>
+              <li class="ani-list"><a>Yuuki Yuuna wa Yuusha de Aru: Washio Sumi no Shou 2 - Tamashii</a></li>
+              <li class="ani-list"><a>Yuuki Yuuna wa Yuusha de Aru: Washio Sumi no Shou 3 - Yakusoku</a></li>
+              <li class="ani-list"><a>Yuukoku no Moriarty</a></li>
+              <li class="ani-list"><a>Yuukoku no Moriarty Part 2</a></li>
+              <li class="ani-list"><a>Yuukoku no Moriarty OVA</a></li>
+              <li class="ani-list"><a>Yuusha ni Narenakatta Ore wa Shibushibu Shuushoku wo Ketsui Shimashita.</a></li>
+              <li class="ani-list"><a>Yuusha ni Narenakatta Ore wa Shibushibu Shuushoku wo Ketsui Shimashita.
+                  Specials</a></li>
+              <li class="ani-list"><a>Yuusha ni Narenakatta Ore wa Shibushibu Shuushoku wo Ketsui Shimashita. OVA</a>
+              </li>
+              <li class="ani-list"><a>Yuusha, Yamemasu</a></li>
+              <li class="ani-list"><a>Yuusha, Yamemasu: Kenshuu Ryokou wa Mokuteki wo Miushinau na</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="letter">
-            <div id="#Z">
-              <h3><a class="group">Z</a></h3>
-              <ul>
-                <li class="ani-list"><a></a></li>
-              </ul>
-            </div>
+        <div class="letter">
+          <div id="Z">
+            <h3><a class="group">Z</a></h3>
+            <ul>
+              <li class="ani-list"><a>Zan Sayonara Zetsubou Sensei </a></li>
+              <li class="ani-list"><a>Zan Sayonara Zetsubou Sensei Bangaichi</a></li>
+              <li class="ani-list"><a>Zankyou no Terror</a></li>
+              <li class="ani-list"><a>Zero kara Hajimeru Mahou no Sho</a></li>
+              <li class="ani-list"><a>Zero no Tsukaima</a></li>
+              <li class="ani-list"><a>Zero no Tsukaima F</a></li>
+              <li class="ani-list"><a>Zero no Tsukaima: Futatsuki no Kishi</a></li>
+              <li class="ani-list"><a>Zero no Tsukaima: Princesses no Rondo</a></li>
+              <li class="ani-list"><a>Zero no Tsukaima: Princesses no Rondo - Yuuwaku no Sunahama</a></li>
+              <li class="ani-list"><a>Zettai Karen Children: The Unlimited - Hyoubu Kyousuke</a></li>
+              <li class="ani-list"><a>Zutto Mae kara Suki deshita. Kokuhaku Jikkou Iinkai</a></li>
+              <li class="ani-list"><a>Zettai Karen Children</a></li>
+              <li class="ani-list"><a>Zettai Karen Children OVA: Aitazousei! Ubawareta Mirai?</a></li>
+              <li class="ani-list"><a>Zoku Owarimonogatari</a></li>
+              <li class="ani-list"><a>Zoku Sayonara Zetsubou Sensei</a></li>
+              <li class="ani-list"><a>Zombieland Saga</a></li>
+              <li class="ani-list"><a>Zombieland Saga Revenge</a></li>
+              <li class="ani-list"><a>Zutto Mae kara Suki deshita. Kokuhaku Jikkou Iinkai</a></li>
+            </ul>
           </div>
-
         </div>
       </div>
+    </div>
   </body>
 
 </html>
