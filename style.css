@@ -85,7 +85,7 @@ body{
     margin-right: auto;
     max-width: 1180px;
     padding: 0 30px;
-    background-color: honeydew;
+    background-color: rgba(240, 255, 240, 0.9);
     color: firebrick;
 }
 
@@ -217,8 +217,8 @@ aside#right {
     float: left;
     margin: 10px;
     position: relative;
-    width: 220px;
-    height: 420px;
+    width: 210px;
+    height: 385px;
     border: 5px sienna;
     word-wrap: break-word;
 }
