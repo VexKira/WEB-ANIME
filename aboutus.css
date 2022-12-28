@@ -1,0 +1,19 @@
+.text1{
+    margin: 10px 15px;
+    font-size: 16px;
+}
+
+.text2{
+    padding: 10px;
+    background-color: bisque;
+    font-size: 18px;
+}
+
+.col-sm-5{
+    padding: 0;
+}
+
+.col-md-7{
+    padding: 10px;
+    background-color: bisque;
+}
