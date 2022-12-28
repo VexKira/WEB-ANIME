@@ -12,7 +12,7 @@ body{
 }
 
 #text{
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .center{
@@ -63,27 +63,16 @@ body{
 }
 
 .genre-carousel{
-    width: 69%;
-    height: auto;
-    display: flexbox;
-    padding: 15px 20px 15px 20px;
-    background-color: azure;
-    margin-right: 5px;
-}
-
-.popular{
-    width: 30%;
-    height: auto;
-    float: right;
-    box-sizing: border-box;
-    background-color:mediumaquamarine;
-    margin-left: 5px;
+    padding: 15px 20px;
+    background-color: rgba(76, 0, 130, 0.85);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .container2{
     margin-left: auto;
     margin-right: auto;
-    max-width: 1180px;
+    max-width: 1200px;
     padding: 0 30px;
     background-color: rgba(240, 255, 240, 0.9);
     color: firebrick;
@@ -107,53 +96,23 @@ aside#right {
     padding: 0 5px;
 }
 
-.row1{
-    flex-flow: row;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-
-.container-fluid1{
-    display: flex;
-    display: block;
-}
-
-.img{
-    width: 150px;
-}
-
-.text{
-    width: auto;
-    padding-left: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 15px;
-    align-content: center;
-}
-
-.pop{
-    height: 210px;
-    width: 150px;
-}
-
-.trend{
-    font-size: 35px;
-    padding: 15px 10px 0 10px;
-    margin: 0%;
-}
-
 .genre{
     font-size: 35px;
+    text-align: center;
+    color: violet;
+    text-decoration: solid;
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
 .container3{
-    max-width: 1350px;
+    max-width: 88%;
     width: 100%;
     padding: 20px;
     background-color: khaki;
-    float: left;
-    margin: 0 93px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .alphabet-list{
@@ -179,6 +138,7 @@ aside#right {
     width: 30px;
     display: block;
     align-content: center;
+    border-radius: 10px;
 }
 
 .anime-list{
@@ -241,8 +201,27 @@ aside#right {
 
 .container4{
     background-color: rgba(0, 206, 209, 0.6);
-    float: left;
-    margin: auto; 
+    display: inline-block;
+    margin: auto;
     width: 100%;
     padding: 40px;
+}
+
+.text-img{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: snow;
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 30px;
+    padding: 5px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.new-anime{
+    display: inline-block; 
+    margin: 0 15px;
+    margin-bottom: 20px;
+    width: 332px;
 }

@@ -7,6 +7,7 @@
     <title>AniMend | Home</title>
     <link rel="icon" href="img/logo.png" />
     <link rel="stylesheet" href="style.css" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -15,13 +16,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
   </head>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Habibi&display=swap');
+
+    * {
+      font-family: 'Habibi', serif;
+    }
+  </style>
 
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#home.html">
+          <a class="navbar-brand" href="home.html">
             <img src="img/logo.png" width="100px" height="74" style="margin: 0 15px;"
               class="d-inline-block align-text-center">
             AniMend
@@ -33,13 +46,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#anime.html">Anime List</a>
+                <a class="nav-link" href="anime.html">Anime List</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#movie.html">Movies</a>
+                <a class="nav-link" href="movie.html">Movies</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -48,76 +61,79 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#Action">Action</a>
+                    <a class="dropdown-item" href="action">Action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Adventure">Adventure</a>
+                    <a class="dropdown-item" href="adventure">Adventure</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Comedy">Comedy</a>
+                    <a class="dropdown-item" href="comedy">Comedy</a>
                   </li>
-                  <li><a class="dropdown-item" href="#Crime">Crime</a></li>
+                  <li><a class="dropdown-item" href="crime">Crime</a></li>
                   <li>
-                    <a class="dropdown-item" href="#Demons">Demons</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#Detective">Detective</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#Drama">Drama</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Fantasy">Fantasy</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#Game">Game</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Historical">Historical</a>
+                    <a class="dropdown-item" href="demons">Demons</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Horror">Horror</a>
+                    <a class="dropdown-item" href="detective">Detective</a>
+                  </li>
+                  <li><a class="dropdown-item" href="drama">Drama</a></li>
+                  <li>
+                    <a class="dropdown-item" href="fantasy">Fantasy</a>
+                  </li>
+                  <li><a class="dropdown-item" href="game">Game</a></li>
+                  <li>
+                    <a class="dropdown-item" href="historical">Historical</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Isekai">Isekai</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#Magic">Magic</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Martial">Martial Arts</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#Mecha">Mecha</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Militiary">Military</a>
+                    <a class="dropdown-item" href="horror">Horror</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Psychological">Psychological</a>
+                    <a class="dropdown-item" href="isekai">Isekai</a>
+                  </li>
+                  <li><a class="dropdown-item" href="magic">Magic</a></li>
+                  <li>
+                    <a class="dropdown-item" href="martial">Martial Arts</a>
+                  </li>
+                  <li><a class="dropdown-item" href="mecha">Mecha</a></li>
+                  <li>
+                    <a class="dropdown-item" href="militiary">Military</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Romance">Romance</a>
+                    <a class="dropdown-item" href="psychological">Psychological</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#School">School</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#SciFi">Sci-Fi</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Seinen">Seinen</a>
+                    <a class="dropdown-item" href="romance">Romance</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Shounen">Shounen</a>
+                    <a class="dropdown-item" href="school">School</a>
+                  </li>
+                  <li><a class="dropdown-item" href="sciFi">Sci-Fi</a></li>
+                  <li>
+                    <a class="dropdown-item" href="seinen">Seinen</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Slice">Slice of Life</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#Sport">Sport</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Supernatural">Supernatural</a>
+                    <a class="dropdown-item" href="shounen">Shounen</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Thriller">Thriller</a>
+                    <a class="dropdown-item" href="slice">Slice of Life</a>
+                  </li>
+                  <li><a class="dropdown-item" href="sport">Sport</a></li>
+                  <li>
+                    <a class="dropdown-item" href="supernatural">Supernatural</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Time">Time Travel</a>
+                    <a class="dropdown-item" href="thriller">Thriller</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="time">Time Travel</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Link</a>
+                <a class="nav-link" href="link.html">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -129,7 +145,7 @@
       </nav>
     </header>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-bottom: 30px;">
       <h1 class="title">RECOMMEND</h1>
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -191,16 +207,16 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="img/kaguyasama/kaguya.jpg" class="center" />
+            <img src="img/kaguya.jpg" class="center" />
             <div class="carousel-caption d-none d-md-block">
               <h5 class="caption">Kaguya-sama: Love is War</h5>
               <p class="caption">TV Series</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="img/deathnote.jpg" class="center" />
+            <img src="img/arknight.jpg" class="center" />
             <div class="carousel-caption d-none d-md-block">
-              <h5 class="caption">Death Note</h5>
+              <h5 class="caption">Arknights: Reimei Zensou</h5>
               <p class="caption">TV Series</p>
             </div>
           </div>
@@ -239,36 +255,104 @@
       </div>
     </div>
 
-    <div class="container1">
-      <div class="row1">
-        <main class="genre-carousel">
-          <h2 class="genre">FANTASY</h2>
+    <div class="container-fluid" style="margin-bottom: 30px; padding: 35px; background-color: rgba(76, 0, 130, 0.7);">
+      <h2 class="genre">Upcoming Anime List</h2>
+      <div class="row">
+        <h2 class="genre">Winter</h2>
+        <ul style=" display:table; list-style: none;">
+          <li class="new-anime">
+            <img src="img/bsd4.jpg" height="470px" width="332px">
+            <p class="text-img">Bungou Stray Dogs 4th Season</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/tomo.jpg" height="470px" width="332px">
+            <p class="text-img">Tomo-chan wa Onnanoko!</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/spyroom.jpg" height="470px" width="332px">
+            <p class="text-img">Spy Kyoushitsu</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/inspectre2.jpg" height="470px" width="332px">
+            <p class="text-img">Kyokou Suiri Season 2</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/danmachi4.jpg" height="470px" width="332px">
+            <p class="text-img">DanMachi IV: Fuka Shou - Yakusai-hen</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/tristamp.jpg" height="470px" width="332px">
+            <p class="text-img">Trigun Stampede</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/nierautomata.jpg" height="470px" width="332px">
+            <p class="text-img">NieR:Automata Ver1.1a</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/vinland2.jpg" height="470px" width="332px">
+            <p class="text-img">Vinland Saga Season 2</p>
+          </li>
+        </ul>
+      </div>
 
-        </main>
-        <aside class="popular">
-          <h3 class="trend">POPULAR</h3>
-          <div class="row1">
-            <section class="img">
-              <img src="img/violet/violet m2.jpg" class="pop">
-            </section>
-            <aside class="text">
-              Violet Evergarden Movie<br>
-              Type : Movie<br>
-              Duration : 2hr 20min<br>
-            </aside>
-          </div>
-          <div class="row1">
-            <section class="img">
-              <img src="img/fate/fsn ubw s2.jpg" class="pop">
-            </section>
-            <aside class="text">
-              Fate/stay night: Unlimited Blade Works<br>
-              Type : TV Series<br>
-              Episodes : 12<br>
-              Duration : 24min/ep<br>
-            </aside>
-          </div>
-        </aside>
+      <div class="row">
+        <h2 class="genre">Spring</h2>
+        <ul style=" display:table; list-style: none;">
+          <li class="new-anime">
+            <img src="img/hell.jpg" height="470px" width="332px">
+            <p class="text-img">Jigokuraku</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/oshinoko.jpg" height="470px" width="332px">
+            <p class="text-img">"Oshi no Ko"</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/mashle.jpg" height="470px" width="332px">
+            <p class="text-img">Mashle</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/mahouyome.jpg" height="470px" width="332px">
+            <p class="text-img">Mahoutsukai no Yome Season 2</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/konosubamegu.jpg" height="470px" width="332px">
+            <p class="text-img">Kono Subarashii Sekai ni Bakuen wo!</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/dmdp.jpg" height="470px" width="332px">
+            <p class="text-img">Dead Mount Death Play</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/kuma2.jpg" height="470px" width="332px">
+            <p class="text-img">Kuma Kuma Kuma Bear Punch!</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/knk3.jpg" height="470px" width="332px">
+            <p class="text-img">Kimetsu no Yaiba: Katanakaji no Sato-hen</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <h2 class="genre">Summer</h2>
+        <ul style=" display:table; list-style: none;">
+          <li class="new-anime">
+            <img src="img/darkg.jpg" height="470px" width="332px">
+            <p class="text-img">Dark Gathering</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/jujutsu/jjk2.jpg" height="470px" width="332px">
+            <p class="text-img">Jujutsu Kaisen 2nd Season</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/bleach/btybw2.jpg" height="470px" width="332px">
+            <p class="text-img">Bleach TYBW - Ketsubetsu-tan</p>
+          </li>
+          <li class="new-anime">
+            <img src="img/tns.jpg" height="470px" width="332px">
+            <p class="text-img">Tsuyokute New Saga</p>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

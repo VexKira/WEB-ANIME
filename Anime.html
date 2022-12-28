@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AniMend | List All Anime</title>
+    <title>AniMend | Home</title>
     <link rel="icon" href="img/logo.png" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,13 +15,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
   </head>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Habibi&display=swap');
+
+    * {
+      font-family: 'Habibi', serif;
+    }
+  </style>
 
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#home.html">
+          <a class="navbar-brand" href="home.html">
             <img src="img/logo.png" width="100px" height="74" style="margin: 0 15px;"
               class="d-inline-block align-text-center">
             AniMend
@@ -33,13 +44,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#anime.html">Anime List</a>
+                <a class="nav-link" href="anime.html">Anime List</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#movie.html">Movies</a>
+                <a class="nav-link" href="movie.html">Movies</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -48,76 +59,79 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#Action">Action</a>
+                    <a class="dropdown-item" href="action">Action</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Adventure">Adventure</a>
+                    <a class="dropdown-item" href="adventure">Adventure</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Comedy">Comedy</a>
+                    <a class="dropdown-item" href="comedy">Comedy</a>
                   </li>
-                  <li><a class="dropdown-item" href="#Crime">Crime</a></li>
+                  <li><a class="dropdown-item" href="crime">Crime</a></li>
                   <li>
-                    <a class="dropdown-item" href="#Demons">Demons</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#Detective">Detective</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#Drama">Drama</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Fantasy">Fantasy</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#Game">Game</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Historical">Historical</a>
+                    <a class="dropdown-item" href="demons">Demons</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Horror">Horror</a>
+                    <a class="dropdown-item" href="detective">Detective</a>
+                  </li>
+                  <li><a class="dropdown-item" href="drama">Drama</a></li>
+                  <li>
+                    <a class="dropdown-item" href="fantasy">Fantasy</a>
+                  </li>
+                  <li><a class="dropdown-item" href="game">Game</a></li>
+                  <li>
+                    <a class="dropdown-item" href="historical">Historical</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Isekai">Isekai</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#Magic">Magic</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Martial">Martial Arts</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#Mecha">Mecha</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Militiary">Military</a>
+                    <a class="dropdown-item" href="horror">Horror</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Psychological">Psychological</a>
+                    <a class="dropdown-item" href="isekai">Isekai</a>
+                  </li>
+                  <li><a class="dropdown-item" href="magic">Magic</a></li>
+                  <li>
+                    <a class="dropdown-item" href="martial">Martial Arts</a>
+                  </li>
+                  <li><a class="dropdown-item" href="mecha">Mecha</a></li>
+                  <li>
+                    <a class="dropdown-item" href="militiary">Military</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Romance">Romance</a>
+                    <a class="dropdown-item" href="psychological">Psychological</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#School">School</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#SciFi">Sci-Fi</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Seinen">Seinen</a>
+                    <a class="dropdown-item" href="romance">Romance</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Shounen">Shounen</a>
+                    <a class="dropdown-item" href="school">School</a>
+                  </li>
+                  <li><a class="dropdown-item" href="sciFi">Sci-Fi</a></li>
+                  <li>
+                    <a class="dropdown-item" href="seinen">Seinen</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Slice">Slice of Life</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#Sport">Sport</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#Supernatural">Supernatural</a>
+                    <a class="dropdown-item" href="shounen">Shounen</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Thriller">Thriller</a>
+                    <a class="dropdown-item" href="slice">Slice of Life</a>
+                  </li>
+                  <li><a class="dropdown-item" href="sport">Sport</a></li>
+                  <li>
+                    <a class="dropdown-item" href="supernatural">Supernatural</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Time">Time Travel</a>
+                    <a class="dropdown-item" href="thriller">Thriller</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="time">Time Travel</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Link</a>
+                <a class="nav-link" href="link.html">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -271,9 +285,7 @@
               <li class="ani-list"><a>Berserk</a></li>
               <li class="ani-list"><a>Berserk (2016)</a></li>
               <li class="ani-list"><a>Berserk (2017)</a></li>
-              <li class="ani-list"><a>Berserk: Ougon Jidai-hen I - Haou no Tamago</a></li>
-              <li class="ani-list"><a>Berserk: Ougon Jidai-hen II - Doldrey Kouryaku</a></li>
-              <li class="ani-list"><a>Berserk: Ougon Jidai-hen III - Kourin</a></li>
+              <li class="ani-list"><a>Berserk: Ougon Jidai-hen - Memorial Edition</a></li>
               <li class="ani-list"><a>Big Order</a></li>
               <li class="ani-list"><a>Black Bullet</a></li>
               <li class="ani-list"><a>Black Clover</a></li>
@@ -295,6 +307,7 @@
               <li class="ani-list"><a>Bleach Movie 3: Fade to Black - Kimi no Na wo Yobu</a></li>
               <li class="ani-list"><a>Bleach Movie 4: Jigoku-hen</a></li>
               <li class="ani-list"><a>Bleach: Sennen Kessen-hen</a></li>
+              <li class="ani-list"><a>Bleach: Sennen Kessen-hen - Ketsubetsu-tan</a></li>
               <li class="ani-list"><a>Blend S</a></li>
               <li class="ani-list"><a>Blood Lad</a></li>
               <li class="ani-list"><a>Blood Lad OVA</a></li>
@@ -354,9 +367,6 @@
               <li class="ani-list"><a>Chain Chronicle: Haecceitas no Hikari Part 3</a></li>
               <li class="ani-list"><a>Chainsaw Man</a></li>
               <li class="ani-list"><a>Chaos Dragon: Sekiryuu Seneki</a></li>
-              <li class="ani-list"><a>ChäoS;Child</a></li>
-              <li class="ani-list"><a>ChäoS;Child: Silent Sky</a></li>
-              <li class="ani-list"><a>ChäoS;HEAd</a></li>
               <li class="ani-list"><a>Charlotte</a></li>
               <li class="ani-list"><a>Charlotte: Tsuyoimono-tachi</a></li>
               <li class="ani-list"><a>Chiyu Mahou no Machigatta Tsukaikata: Senjou wo Kakeru Kai</a></li>
@@ -432,6 +442,7 @@
               <li class="ani-list"><a>Deadman Wonderland</a></li>
               <li class="ani-list"><a>Deadman Wonderland OVA</a></li>
               <li class="ani-list"><a>Death Billiards</a></li>
+              <li class="ani-list"><a>Dead Mount Death Play</a></li>
               <li class="ani-list"><a>Death Note</a></li>
               <li class="ani-list"><a>Death Parade</a></li>
               <li class="ani-list"><a>Deatte 5-byou de Battle</a></li>
@@ -857,6 +868,7 @@
               <li class="ani-list"><a>Kubo-san wa Mob wo Yurusanai</a></li>
               <li class="ani-list"><a>Kujira no Kora wa Sajou ni Utau</a></li>
               <li class="ani-list"><a>Kuma Kuma Kuma Bear</a></li>
+              <li class="ani-list"><a>Kuma Kuma Kuma Bear Punch!</a></li>
               <li class="ani-list"><a>Kumichou Musume to Sewagakari</a></li>
               <li class="ani-list"><a>Kuro no Shoukanshi</a></li>
               <li class="ani-list"><a>Kuzu no Honkai</a></li>
@@ -1603,11 +1615,6 @@
               <li class="ani-list"><a>Yuukoku no Moriarty</a></li>
               <li class="ani-list"><a>Yuukoku no Moriarty Part 2</a></li>
               <li class="ani-list"><a>Yuukoku no Moriarty OVA</a></li>
-              <li class="ani-list"><a>Yuusha ni Narenakatta Ore wa Shibushibu Shuushoku wo Ketsui Shimashita.</a></li>
-              <li class="ani-list"><a>Yuusha ni Narenakatta Ore wa Shibushibu Shuushoku wo Ketsui Shimashita.
-                  Specials</a></li>
-              <li class="ani-list"><a>Yuusha ni Narenakatta Ore wa Shibushibu Shuushoku wo Ketsui Shimashita. OVA</a>
-              </li>
               <li class="ani-list"><a>Yuusha, Yamemasu</a></li>
               <li class="ani-list"><a>Yuusha, Yamemasu: Kenshuu Ryokou wa Mokuteki wo Miushinau na</a></li>
             </ul>
@@ -1622,11 +1629,6 @@
               <li class="ani-list"><a>Zan Sayonara Zetsubou Sensei Bangaichi</a></li>
               <li class="ani-list"><a>Zankyou no Terror</a></li>
               <li class="ani-list"><a>Zero kara Hajimeru Mahou no Sho</a></li>
-              <li class="ani-list"><a>Zero no Tsukaima</a></li>
-              <li class="ani-list"><a>Zero no Tsukaima F</a></li>
-              <li class="ani-list"><a>Zero no Tsukaima: Futatsuki no Kishi</a></li>
-              <li class="ani-list"><a>Zero no Tsukaima: Princesses no Rondo</a></li>
-              <li class="ani-list"><a>Zero no Tsukaima: Princesses no Rondo - Yuuwaku no Sunahama</a></li>
               <li class="ani-list"><a>Zettai Karen Children: The Unlimited - Hyoubu Kyousuke</a></li>
               <li class="ani-list"><a>Zutto Mae kara Suki deshita. Kokuhaku Jikkou Iinkai</a></li>
               <li class="ani-list"><a>Zettai Karen Children</a></li>
@@ -1641,6 +1643,7 @@
         </div>
       </div>
     </div>
+
   </body>
 
 </html>

@@ -15,13 +15,24 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
             integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
             crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
     </head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Habibi&display=swap');
+
+        * {
+            font-family: 'Habibi', serif;
+        }
+    </style>
 
     <body>
         <header>
             <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#home.html">
+                    <a class="navbar-brand" href="home.html">
                         <img src="img/logo.png" width="100px" height="74" style="margin: 0 15px;"
                             class="d-inline-block align-text-center">
                         AniMend
@@ -33,13 +44,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#home.html">Home</a>
+                                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#anime.html">Anime List</a>
+                                <a class="nav-link" href="anime.html">Anime List</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#movie.html">Movies</a>
+                                <a class="nav-link" href="movie.html">Movies</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -48,76 +59,79 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="#Action">Action</a>
+                                        <a class="dropdown-item" href="action">Action</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#Adventure">Adventure</a>
+                                        <a class="dropdown-item" href="adventure">Adventure</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#Comedy">Comedy</a>
+                                        <a class="dropdown-item" href="comedy">Comedy</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#Crime">Crime</a></li>
+                                    <li><a class="dropdown-item" href="crime">Crime</a></li>
                                     <li>
-                                        <a class="dropdown-item" href="#Demons">Demons</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#Detective">Detective</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#Drama">Drama</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="#Fantasy">Fantasy</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#Game">Game</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="#Historical">Historical</a>
+                                        <a class="dropdown-item" href="demons">Demons</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#Horror">Horror</a>
+                                        <a class="dropdown-item" href="detective">Detective</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="drama">Drama</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="fantasy">Fantasy</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="game">Game</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="historical">Historical</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#Isekai">Isekai</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#Magic">Magic</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="#Martial">Martial Arts</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#Mecha">Mecha</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="#Militiary">Military</a>
+                                        <a class="dropdown-item" href="horror">Horror</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#Psychological">Psychological</a>
+                                        <a class="dropdown-item" href="isekai">Isekai</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="magic">Magic</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="martial">Martial Arts</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="mecha">Mecha</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="militiary">Military</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#Romance">Romance</a>
+                                        <a class="dropdown-item" href="psychological">Psychological</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#School">School</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#SciFi">Sci-Fi</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="#Seinen">Seinen</a>
+                                        <a class="dropdown-item" href="romance">Romance</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#Shounen">Shounen</a>
+                                        <a class="dropdown-item" href="school">School</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="sciFi">Sci-Fi</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="seinen">Seinen</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#Slice">Slice of Life</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#Sport">Sport</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="#Supernatural">Supernatural</a>
+                                        <a class="dropdown-item" href="shounen">Shounen</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#Thriller">Thriller</a>
+                                        <a class="dropdown-item" href="slice">Slice of Life</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="sport">Sport</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="supernatural">Supernatural</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#Time">Time Travel</a>
+                                        <a class="dropdown-item" href="thriller">Thriller</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="time">Time Travel</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link">Link</a>
+                                <a class="nav-link" href="link.html">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
@@ -134,7 +148,7 @@
                 <center>
                     <h4>Link to Complete Anime Info Website</h4>
                 </center>
-                <ul style="margin: 0;">
+                <ul style="margin: 0 0 0 150px;">
                     <li>
                         <a href="https://myanimelist.net/" style="text-decoration: none;">MyAnimeList</a>
                     </li>
@@ -172,7 +186,7 @@
                 <center>
                     <h4>Link to Watch Anime From Legal Website</h4>
                 </center>
-                <ul style="margin: 0;">
+                <ul style="margin: 0 0 0 150px;;">
                     <li>
                         <a href="https://www.netflix.com/" style="text-decoration: none;">Netflix</a>
                     </li>
